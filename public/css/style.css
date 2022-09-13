@@ -1,0 +1,1786 @@
+/*------------------------------------------------------CSS For All ------------------------------------------------------*/
+
+*,::before,::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    font-family: 'Segoe UI','Uber move', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+a {
+    list-style: none;
+    margin: 0;
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 6.5% 1fr 6.5%;
+}
+
+
+/*------------------------------------------------------ CSS Animations ---------------------------------------------------*/
+
+.fade-in{
+    animation: fade-in 1s ;
+    -webkit-animation: fade-in 1s ;
+    -moz-animation: fade-in 1s ;
+    -o-animation: fade-in 1s ;
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    -moz-animation: bounce 2s infinite;
+    -o-animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+    40% {-webkit-transform: translateY(-30px);}
+    60% {-webkit-transform: translateY(-15px);}
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/*------------------------------------------------------ CSS Landing ------------------------------------------------------*/
+
+
+div.container-landing-page {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    display: block;
+}
+
+.landing-first-container {
+    width: 100vw;
+    margin: auto;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.landing-second-container {
+    width: 100vw;
+    margin: auto;
+    height: 10vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+#CDCR1{
+    width: clamp(80px, 20%, 250px);
+}
+
+#CDCR2{
+    width: clamp(80px, 25%, 300px);
+}
+
+.fleche {
+    width: 1.8rem;
+}
+
+/*------------------------------------------------------ CSS Login ------------------------------------------------------*/
+
+.CDCR-login{
+    width: 9rem;
+}
+
+.login-container {
+    display: flex;
+    grid-column: span 3;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+}
+
+.login-left-box, .login-right-box {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.form-container {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border-left: 1px solid white;
+}
+
+.login-form {
+    width: 50%;
+    margin:auto;
+    text-align: left;
+}
+
+.email-box, .password-box {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.form-caps {
+    text-align: left;
+}
+
+.login-form-label {
+    width: 100%;
+    margin: auto;
+    font-size: 1.2rem;
+    font-weight: bolder;
+
+}
+
+.login-form-input {
+    width: 100%;
+    margin: 0.55rem auto;
+    background: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 0.9rem;
+    font-size: 1rem;
+    box-shadow: 1px 1px 1px rgb(0, 0, 0);
+    text-align: start;
+}
+
+.forgotten-password-link {
+    display: block;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.login-form-button {
+    display: block;
+    width: 10rem;
+    margin:  2.8rem auto 0 auto;
+    padding: 0.5rem;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.login-form-button:hover {
+    background-color: rgba(255, 255, 255, 0.384);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+/*------------------------------------------------------ CSS Header ------------------------------------------------------*/
+
+header {
+    width: 100%;
+    height: 12.5vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    background-color: orange;
+}
+
+.header-left {
+    display: none;
+}
+
+/*------------------------------------------------------- CSS Main -------------------------------------------------------*/
+
+.main {
+    width: 100%;
+    height: 70vh;
+    margin: auto;
+    display: grid;
+    align-items: center;
+}
+
+.scroll {
+    width: 100%;
+    margin: 0;
+    height: 67vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: violet;
+}
+
+
+.scroll::-webkit-scrollbar {
+    width: 0.8rem;
+    margin: auto 1rem;
+    filter: drop-shadow(0 0 0.45rem rgba(0, 0, 0, 0.24));
+}
+
+.scroll::-webkit-scrollbar-track {
+    background: #faf6f638;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.116);
+    border-radius: 7px;
+    filter: drop-shadow(0 0 0.45rem rgba(0, 0, 0, 0.24));
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background: rgba(46, 45, 45, 0.856);
+    border-radius: 7px;
+}
+
+.scroll::-webkit-scrollbar-thumb:hover {
+    background: #a3a3a3;
+
+}
+/*------------------------------------------------------ CSS Aside ------------------------------------------------------*/
+
+
+aside {
+    background-color: red;
+}
+
+.aside-link-img {
+    font-size: 2.2rem;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*------------------------------------------------------ CSS Footer -----------------------------------------------------*/
+
+footer {
+    width: 100%; 
+    margin: auto;
+    display: flex;
+    align-items: center; 
+    background-color: greenyellow;
+}
+
+.footer-container-box {
+    width: 90%;
+    height: 10vh;
+    padding: 1rem;
+    margin:auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid white;
+}
+
+.footer-container-left{
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer-ul-li  {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 0.5rem;
+}
+
+.footer-ul-li a {
+    font-size: 0.75rem;
+}
+
+.footer-text {
+    font-size: 0.75rem;
+    margin-left: 0.5rem;
+    filter: drop-shadow(0 0 0.45rem rgba(0, 0, 0, 0.24));
+}
+
+.footer-responsive  {
+    display: none;
+}
+
+/*------------------------------------------------------ Css Navbar ------------------------------------------------------*/
+.nav {
+    align-items:center;
+}
+
+.nav-content-box-center {
+    width: 100%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-content-center-image {
+    width: 2.7rem;
+    height: auto;
+    margin: auto 2rem;
+    filter: drop-shadow(0 0 0.45rem rgba(0, 0, 0, 0.24));
+}
+
+.nav-content-box {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.admin-menu {
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 6.5%;  
+    border: 1px solid white;
+    padding: 0.3rem 0.80rem;
+    border-radius: 7px;
+}
+
+.connexion {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.connexion-link {
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    border-left: 1px solid white;
+    padding: 8px;
+}
+
+.nav-content-left, .nav-content-right {
+    display:inline-flex;
+}
+
+.nav-content-right-box {
+    align-items: right;
+    justify-content: right;
+}
+
+.nav-content-image {
+    width: 3rem;
+    height: auto;
+    margin: 0;
+    filter: drop-shadow(0 0 0.45rem rgba(0, 0, 0, 0.24));
+}
+
+.nav-content-ul {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin: auto;
+}
+
+.nav-responsive-ul-li {
+    display: inline-flex;
+    align-items:center;
+    list-style-type: none;
+    margin: auto 1rem;
+}
+
+.header-link {
+    margin: 0;
+    filter: drop-shadow(0 0 0.45rem rgba(0, 0, 0, 0.24));
+}
+
+.header-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1.5px;
+    background: rgb(255, 255, 255);
+    transition: width .4s;
+}
+
+.header-link:hover::after {
+    width: 100%;
+    transition: width .4s;
+}
+
+.admin-link {
+    display: flex;
+    align-items: center;
+}
+
+.admin-link-menu {
+    width: fit-content;
+    font-size: 1rem;
+    margin: 0.5rem 5rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.fingerprint {
+    display:block;
+    font-size: 2rem;
+    margin: auto 0.5rem;
+    padding-right: 1rem;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-right: 2px solid white;
+}
+
+.fingerprint-menu {
+    display:inline-flex;
+    font-size: 1.5rem;
+    margin: auto 0.5rem;
+    padding-right: 0.5rem;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-right: 2px solid white;
+}
+.nav-responsive-content-box{
+    display: none;
+}
+
+/*------------------------------------------------------ Css Sub Navbar ------------------------------------------------------*/
+
+.nav-sub-menu {
+    width: 100%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.652);
+}
+
+.nav-sub-menu-container {
+    width: 88%;
+    height: 7.5vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;  
+    
+}
+
+.nav-sub-icons-container, .nav-sub-rdv-container, .nav-sub-horaires-container  {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    
+}
+
+.nav-sub-icons-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 0.4rem;
+}
+
+.nav-sub-icons-link-title {
+    display: block;
+    margin-left:0.5rem;
+}
+
+.nav-sub-icons-link-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ion-icon {
+    font-size: 2rem;
+    margin: 0 0.25rem;
+}
+
+.nav-sub-horaire-icon-container {
+    display: flex;
+    align-items: center;
+    margin-left: 0.5rem;
+}
+
+.nav-sub-horaire-icon {
+    font-size: 2rem;
+    margin-right: 0.5rem;
+}
+
+.nav-sub-horaires-text {
+    text-align: start;
+}
+
+.responsive-menu {
+    display: none;
+}
+
+/*---------------------Css Accueil----------------------------*/
+
+.accueil-content-box {
+    width: 100%;
+    margin: auto;
+    display: inline-grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: 50% 50%;
+}
+
+.accueil-content-title {
+    font-size: 3.5vw;
+    width: 100%;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.accueil-content-description-text{
+    width: 95%;
+    margin: 1rem  auto;
+    text-align: justify;
+}
+
+.accueil-content-description-white-line{
+    width: 20%;
+    height: 0.1rem;
+    margin: 2rem  auto;
+    border: 1px solid white;
+    background-color:white;
+}
+
+.accueil-content-left, .accueil-content-right {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.accueil-content-image {
+    width: 80%;
+    height: auto;
+    border-radius:10px;
+}
+
+/*---------------------Css Nous Sommes----------------------------*/
+
+
+.nous-sommes-content-tr {
+    width: 50%;
+    margin: auto 1rem;
+}
+
+.nous-sommes-content-td {
+    width: 50%;
+    margin: auto;
+    height: 63vh;
+}
+
+.nous-sommes-td-title {
+    width: 90%;
+    margin: 1.5rem auto;
+    text-align: start;
+    font-size: 1.8em;
+    filter: drop-shadow(0 0 0.75rem black);
+}
+
+.nous-sommes-td-text{
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+    filter: drop-shadow(0 0 0.75rem black);
+}
+
+.nous-sommes-first-image {
+    width: 90%;
+    height: 43vh;
+    margin: auto;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 0.45rem rgba(0, 0, 0, 0.24));
+    background-image: url(../images/bdd/little-boy-patient-dentist-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nous-sommes-second-image {
+    width: 90%;
+    height: 43vh;
+    margin: auto;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 0.45rem rgba(0, 0, 0, 0.24));
+    background-image: url(../images/bdd/little-boy-patient-dentist-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nous-sommes-third-image {
+    width: 90%;
+    height: 43vh;
+    margin: auto;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 0.45rem rgba(0, 0, 0, 0.24));
+    background-image: url(../images/bdd/little-boy-patient-dentist-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*---------------------Css Traitements----------------------------*/
+
+.traitements-element {
+    width: 80%;
+    margin:auto;
+    padding-bottom: 0.45rem;
+    text-align: center;
+}
+
+.traitements-element-title {
+    font-size: 1.9rem;
+    padding: 1.5rem 0;
+    text-align: center;
+    filter: drop-shadow(0 0 0.45rem rgba(0, 0, 0, 0.24));
+}
+
+.traitements-element-texte {
+    font-size: 1.1rem;
+    text-align: justify;
+    filter: drop-shadow(0 0 0.45rem rgba(0, 0, 0, 0.24));
+}
+
+/*------------------------------------------ Css Nos Equipes -------------------------------------------------*/
+
+#nos-equipes {
+    width: 100%;
+    margin: auto;
+    height: 60vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#nos-equipes::-webkit-scrollbar {
+    height: 0.5rem;
+    margin:  2vh auto 0;
+    filter: drop-shadow(0 0 0.45rem rgba(0, 0, 0, 0.24));
+}
+
+#nos-equipes::-webkit-scrollbar-track {
+    background: #faf6f638;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.116);
+    border-radius: 10px;
+    filter: drop-shadow(0 0 0.45rem rgba(0, 0, 0, 0.24));
+}
+
+#nos-equipes::-webkit-scrollbar-thumb {
+    background: rgba(46, 45, 45, 0.856);
+    border-radius: 10px;
+}
+
+#nos-equipes::-webkit-scrollbar-thumb:hover {
+    background: #a3a3a3;
+
+}
+
+.profile {
+    width: 100%;
+    margin: auto 2.5rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-profile {
+    width: 14rem;
+    height: 18rem;
+    margin: auto;
+    border-radius: 7px;
+    filter: drop-shadow(0 0 0.45rem rgba(0, 0, 0, 0.24));
+    background-image: url(../images/bdd/avatar.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile-name {
+    font-size: 1.8rem;
+    margin: 1rem auto 5px;
+}
+
+.logo-doctolib {
+    width: 5rem;
+    margin: 1.5rem auto;
+}
+
+/*---------------------Css FAQ----------------------------*/
+
+.faq-content-box{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.faq-article {
+    width: 100%;
+    margin: auto;
+    padding: 0.5rem;
+}
+
+.faq-article-title {
+    width: 90%;
+    margin: 1.2rem auto 0.3rem;
+    padding: 1rem 0;
+    text-align: start;
+    font-size: 2.3rem;
+    filter: drop-shadow(0 0 0.75rem black);
+    
+
+}
+
+.faq-article-text{
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+    font-size: 1.1rem;
+    filter: drop-shadow(0 0 0.75rem black);
+}
+
+/*---------------------Css Contact & acces----------------------------*/
+.contact-container{
+    width: 100%;
+    height: 77vh;
+    display: flex;
+    align-items: center;
+}
+.contact-content-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-block-container, .acces-block-container{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    align-items: center;
+}
+
+.form-block {
+    width: 70%;
+    margin: auto;
+    text-align: start;
+}
+
+.form-label {
+    width: 100%;
+    margin: 0.5rem auto;
+    font-size: 1rem;
+}
+
+.checkbox-container {
+    width: 100%;
+    margin: 0.75rem auto;
+    display: inline-flex;
+}
+.checkbox-label {
+    width: 100%;
+    margin: auto;
+    text-align: justify;
+    font-size: 0.65rem;
+}
+.form-input {
+    width: 100%;
+    margin: 0.55rem auto;
+    background: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 7px;
+    box-shadow: 1px 1px 1px rgb(0, 0, 0);
+    text-align: start;
+}
+
+.checkbox-input {
+    width: 0.9rem;
+    height: 0.9rem;
+    margin: auto 0.9rem auto 0;
+    color: rgb(0, 0, 255);
+}
+
+.form-button {
+    display: inline;
+    width: 8rem;
+    margin: 0.5rem auto 0;
+    padding: 0.5rem;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.form-button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin: 0.4rem auto 0.1rem;
+    padding: 5px;
+    background: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #999;
+    resize: none;
+    text-align: start;
+}
+
+textarea::-webkit-scrollbar {
+    width: 11px;
+}
+
+textarea::-webkit-scrollbar-track {
+    background: #faf6f638;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.116);
+    border-radius: 5px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background: rgba(46, 45, 45, 0.856);
+    border-radius: 5px;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+    background: #a3a3a3;
+}
+
+.map {
+    width: 75%;
+    margin: auto;
+    height: 30vh;
+    border-radius: 15px;
+    box-shadow: 5px 6px 6px -1px rgba(0, 0, 0, 0.364);
+    -webkit-box-shadow: 5px 6px 6px -1px rgba(0,0,0,0.59); 
+}
+
+.acces-content-box{
+    width: 100%;
+    justify-content: space-around;
+}
+.acces-box-top, .acces-box-bottom {
+    width: 100%;
+    margin: 1rem auto;
+    display: inline-block;
+}
+
+.acces-box-top-title {
+    width: 100%;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.acces-box-texte {
+    width: 100%;
+    margin: auto;
+    color: rgba(255, 255, 255, 0.857);
+}
+
+@media screen and (max-width: 1280px){
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+
+    .header-center {
+        display: none;
+    }
+    
+    .header-left {
+        width: 100%;
+        margin: auto;
+        display: block;
+    }
+
+    .header-left ul {
+        width: 100%;
+        margin: auto 2rem;
+        display: block;
+    }
+
+    aside {
+        display: none;
+    }
+
+    main {
+        width: 100%;
+        margin: auto;
+        height: 70vh;
+        display: grid;
+        align-items: center;
+        grid-column: span 3;
+    }
+
+    div.scroll {
+        width: 100%;
+        margin: auto;
+        height: 68vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        display: grid;
+        
+    }
+
+    div.scroll::-webkit-scrollbar {
+        display: none;
+    }
+
+    .footer-container-box {
+        width: 95%;
+    }
+
+    .nav-content-box {
+        width: 93%;
+    }
+
+    .nav-sub-menu-container {
+        width: 95%;
+    }
+
+    .nav-sub-horaires-text {
+        text-align: start;
+        font-size: 0.9rem;
+    }
+
+    .nav-sub-icons-link-title {
+        font-size: 0.9rem;;
+        margin-left: 0.3rem;
+    }
+
+    .responsive-menu {
+        display: none;
+    }
+
+    .accueil-content-box {
+        width: 100%;
+        margin: auto;
+        display: list-item;
+    }
+
+    .accueil-content-left{
+        width: 100%;
+        margin: 0;
+    }
+
+    .accueil-content-right {
+        width: 100%;
+        margin: 0.5vh;
+    }
+
+    .accueil-content-title {
+        font-size: 3.5rem;
+        margin: 0.5rem auto;
+        width: 65%;
+    }
+
+    .accueil-content-description-text{
+        font-size: 1.01rem;
+        width: 65%;
+        margin: 0.5rem auto;
+    }
+
+    .accueil-content-description-white-line{
+        width: 15%;
+        height: 0.1rem;
+        margin: 2rem  auto;
+        border: 1px solid white;
+        background-color:white;
+    }
+
+    .accueil-content-left, .accueil-content-right {
+        margin: 5vh auto;
+    }
+
+    .accueil-content-image {
+        width: 50%;
+        height: auto;
+        border-radius:10px;
+    }
+
+    .nous-sommes-content-box {
+        width:100%;
+        margin: auto;
+    }
+
+    .nous-sommes-content-tr {
+        width: 100%;
+        height: fit-content;
+
+    }
+
+    .nous-sommes-content-td {
+        width: 45%;
+        margin: auto;
+        height: 45vh;
+    }
+
+    .nous-sommes-td-title, .nous-sommes-td-text {
+        width: 90%;
+        margin: 1rem auto;
+    }
+    
+    .nous-sommes-first-image ,
+    .nous-sommes-second-image,
+    .nous-sommes-third-image{
+        width: 90%;
+        height: 33vh;
+        margin: auto;
+        border-radius: 10px;
+        filter: drop-shadow(0 0 0.45rem rgba(0, 0, 0, 0.24));
+    }
+    #nos-equipes {
+        width: 95%;
+        margin: auto;
+        height: 65vh;
+        overflow-x: auto;
+        overflow-y: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    
+    }
+    
+    #nos-equipes::-webkit-scrollbar {
+        height: 0.5rem;
+        margin:  1.5rem auto;
+        filter: drop-shadow(0 0 0.45rem rgba(0, 0, 0, 0.24));
+    }
+
+    .profile {
+        width: fit-content;
+        margin: auto 8.5% auto 0;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .contact-content-box section {
+        width: 75%;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 1140px){
+
+    header {
+        width: 100%;
+        margin: auto;
+        height: 15vh;
+        display: grid;
+        align-items: center;
+        grid-column: span 3;
+        background-color: aqua;
+
+    }
+
+    .container {
+        width: 100%;
+        margin: auto;
+        display: block;
+        position: relative;
+        z-index: 10;
+    }
+
+    .landing-first-container {
+        width: 100vw;
+        margin: auto;
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #CDCR1{
+        display: block;
+        width: 10rem;
+    }
+
+    #CDCR2 {
+        display: none;
+    }
+
+    aside {
+        display: none;
+    }
+
+    main {
+        width: 100vw;
+        height: 77vh;
+        margin: auto;
+        position: relative;
+        top: 8vh;
+        z-index: 10;
+    }
+
+    div.scroll {
+        width: 100vw;
+        margin: auto;
+        height: 77vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        z-index: 10;
+    }
+
+    .responsive-menu {
+        display: inline;
+    }
+
+    .nav {
+        width: 100vw;
+        margin:auto;
+        height: 15vh;
+        position: fixed;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .nav-responsive-content-box {
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    .admin-link {
+        display: none;
+    }
+
+    .nav-sub-menu {
+        position: fixed;
+        top: 10vh;
+        left: 0;
+        width: 100%;
+        margin: auto;
+        height: 1vh;
+        background-color: rgba(0, 0, 0, 0.7);
+        display:inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+    .nav-sub-rdv-link {
+        width: fit-content;
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        border: 0.12vw solid white;
+        border-radius: 15px;
+        padding: 0.89rem;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.3);
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+    }
+
+    .nav-sub-rdv-link:hover {
+        cursor: pointer;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+    }
+
+    .nav-content-ul {
+        display: none;
+    }
+
+    .nav-content-center-image{
+        width: 3.5rem;
+        position: absolute;
+        z-index: 1030;
+        top: 50%;
+        left: 5%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        animation:none;
+    }
+
+    .nav-sub-rdv-container {
+        display: none;
+    }
+
+    .nav-sub-menu {
+        position: fixed;
+        top: 15vh;
+        left: 0;
+        width: 100%;
+        margin: auto;
+        height: 8vh;
+        background-color: rgba(0, 0, 0, 0.7);
+        display:inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .nav-sub-icons-container {
+        justify-content: center;
+    }
+
+    .open, .close {
+        font-size: 3rem;
+        color: white;
+        position: fixed;
+        z-index: 1050;
+        top: 4%;
+        right: 5%;
+        cursor: pointer;
+        
+    }
+
+    .menuIcon {
+        display: block;
+    }
+
+    .xIcon {
+        display: none;
+    }
+
+    .nav-responsive-container {
+        position: absolute;
+        z-index: 999;
+        top: 15vh;
+        width: 100%;
+        height: 78vh;
+        background-color:rgba(0, 0, 0, 0.966);
+        color: white;
+        transform: translateY(-200%);
+        transition: transform 0.5s;
+    }
+
+    .showMenu {
+        transform: translateY(0);
+        display: grid;
+        align-items: center;
+    }
+
+    .nav-responsive-ul-li {
+        width: max-content;
+        display: block;
+        font-size: 2.5rem;
+        margin: 0.5rem 5rem;
+        text-align: left;
+    }
+
+    .nav-responsive-ul-li-icon {
+        font-size: 1.8rem;
+        margin-right: 1rem;
+    }
+
+    .accueil-content-box {
+        display:inline-block;
+        width: 100%;
+        margin:auto ;
+        position: relative;
+        top: 0;
+    }
+
+
+    .accueil-content-title {
+        width:70%;
+        margin: 1vh auto;
+        font-size: 3rem;
+        text-align:center;
+    }
+
+    .accueil-content-description-text {
+        width: 70%;
+        margin:auto;
+    }
+
+    .accueil-content-description-white-line {
+        width: 20%;
+        height: 0.5px;
+        margin: 2rem  auto;
+        border: 1px solid white;
+        background-color:white;
+    }
+
+    .accueil-content-image {
+        width:70%;
+        margin: 1rem auto;
+        height:auto;
+        border-radius:1vw;
+    }
+    .nous-sommes-content-tbody {
+        display: inline-flex;
+        justify-content: center;
+        
+    }
+    .nous-sommes-content-tr {
+        display: grid;
+        justify-content: center;
+    }
+
+    .nous-sommes-content-td {
+        width: 100%;
+        margin: 0.5rem auto;
+        height: fit-content;
+        
+    }
+
+    .nous-sommes-title {
+        font-size: 3.5rem;
+        padding:  1.5vh;
+    }
+
+    .nous-sommes-element-text {
+        width: 75%;
+        margin:auto;
+        text-align:justify;
+        font-size: 1rem;
+    }
+
+    .nous-sommes-first-image{
+        margin: 1rem auto;
+    }
+
+    .nous-sommes-second-image,
+    .nous-sommes-third-image{
+        display: none;
+    }
+
+    .traitements{
+        display: block;
+        width: 100%;
+        margin:  15vh auto 0;
+        z-index: 9;
+        background: black;
+    }
+
+    .traitements-title-container {
+        display:flex;
+        text-align:center;
+        align-items: center;
+        justify-content:center;
+        width:100%;
+        height: 150px;
+        background: url("../images/fond/traitementsfond.png") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .traitements-title {
+        font-size: 3rem;
+        padding:2rem;
+    }
+
+    .traitements-element-title {
+        font-size: 1.5rem;
+        padding:3rem;
+    }
+
+    .traitements-element-text{
+        width: 85%;
+        margin:auto;
+        text-align:justify;
+        font-size: 1.8vw;
+        padding:2rem;
+    }
+    .traitements-element-title-white-underline {
+        width: 80%;
+        height: 1px;
+        margin: 2rem auto;
+        background-color: white;
+    }
+
+    #nos-equipes {
+        width: 90%;  
+    }
+
+    .profile {
+        width: 100%;
+        margin: auto 4%;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .faq-content-box{
+        display: block;
+        width: 95%;
+    }
+
+    .faq-article {
+        
+        border: none;
+    }
+
+  
+
+
+    footer {
+        position: fixed;
+        top: 93%;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-column: span 3;
+        width: 100%;
+        margin: 0;
+        height: 7vh;
+        background-color: black;
+        z-index: 10;
+    }
+
+    .footer-container-box {
+        width: 100vw;
+        height: 7vh;
+        margin:0;
+        display: flex;
+        grid-column: span 3;
+        align-items: center;
+        justify-content: space-between;
+        border:none;
+    }
+
+    .contact-content-box section {
+        width: 90%;
+        height: 70vh;
+        margin: auto;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    
+
+}
+
+@media screen and (max-width: 646px) {
+    .nav-sub-menu {
+        display:none;
+    }  
+
+    .nav-responsive-container {
+        height: 75vh;
+    }
+
+    main {
+        width: 100vw;
+        height: 75vh;
+        position: relative;
+        top: 0;
+    }
+
+    div.scroll {
+        width: 90vw;
+        margin: auto;
+        height: 75vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    div.scroll::-webkit-scrollbar {
+        display: none;
+        width: 0;
+        filter: drop-shadow(0 0 0.45rem rgba(0, 0, 0, 0.24));
+    }
+        
+    .profile {
+        margin: auto 6.5%;
+    }
+
+    .nav-responsive-ul-li {
+        margin: 0.5rem 2.5rem;
+    }
+
+    .admin-link-menu {
+        margin: 0.5rem 2.5rem;
+    }
+
+    footer {
+        position: fixed;
+        top: 90%;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-column: span 3;
+        width: 100%;
+        height: 10vh;
+        margin: auto;
+        background-color: black;
+        border-top: 2px solid white;
+    }
+
+    .footer-container-box {
+        display: none;
+    }
+
+    .footer-responsive {
+        display: block;
+    }
+
+    .footer-responsive-content-box {
+        width: 100vw;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer-icons-message-container, .footer-icons-contact-container, .footer-icons-acces-container   {
+        width: 100%;
+        margin: auto 0.25rem;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+    }
+
+    .footer-icons-link {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-icons-link ion-icon {
+        font-size: 1.85rem;
+        cursor:pointer;
+    }
+
+    .footer-icons-link-title {
+        font-size: 1rem;
+        margin-left: 0.25rem;
+    }
+}
+
+@media screen and (max-width: 375px){
+
+    header {
+        width: 100%;
+        margin: auto;
+        height: 15vh;
+        display: grid;
+        align-items: center;
+        grid-column: span 3;
+    }
+
+    .container {
+        width: 100%;
+        margin: auto;
+        display:block;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .login-container {
+        display: grid;
+        margin: auto;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .login-left-box {
+        width: 100vw;
+        margin: 0;
+        height:20vh;
+        display: inline-flex;
+        align-items: flex-end;
+    }
+
+    .login-right-box {
+        width: 100vw;
+        margin: 0;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-container {
+        width: 100%;
+        height: fit-content;
+        margin: 0;
+        display: inline-flex;
+        align-items: flex-start;
+        justify-content: left;
+        border-left: none;
+    }
+    
+    .CDCR-login {
+        width: 6rem;
+    }
+  
+    .login-form {
+        width: 85%;
+        margin:auto;
+        text-align: left;
+    }
+
+    .login-form-input {
+        width: 100%;
+        padding: 0.7rem;
+    }
+
+    .forgotten-password-link {
+        font-size: 0.8rem;
+    }
+
+    .nav {
+        border-bottom: 2px solid white;
+    }
+
+    .nav-rdv{
+        display: none;
+    }
+
+    .nav-content-ul {
+        display:none;
+    }
+
+
+    .nav-sub-menu {
+        display: none;
+    }
+
+    .accueil-content-box {
+        display:inline-block;
+        width: 100%;
+        margin: 1.5rem auto ;
+        position: relative;
+        top: 0;
+    }
+
+    .accueil-content-left{
+        width: 100%;
+        margin: auto;
+    }
+
+    .accueil-content-right {
+        width: 100%;
+        margin: auto;
+    }
+
+    .accueil-content-title {
+        width: 90%;
+        margin: 1vh auto;
+        font-size: 3rem;
+        text-align:center;
+        display:block;
+    }
+
+    .accueil-content-description-text {
+        width: 90%;
+        margin:auto;
+    }
+
+    .accueil-content-description-white-line {
+        width: 20%;
+        height: 0.5px;
+        margin: 2rem  auto;
+        border: 1px solid white;
+        background-color:white;
+    }
+
+    .accueil-content-image {
+        width:80%;
+        height:auto;
+        border-radius:1vw;
+    }
+
+    .nous-sommes-title {
+        font-size: 3rem;
+        padding:  4vh;
+    }
+
+    .nous-sommes-element-text {
+        width: 75%;
+        margin:auto;
+        text-align:justify;
+        font-size: 1rem;
+    }
+
+    .nous-sommes-image {
+        width: 100%;
+        margin: 5rem auto;
+        border-radius:10px;
+    }
+    #nos-equipes {
+        width: 100%;  
+    }
+    .profile {
+        margin: auto 32.30%;
+    }
+
+    .traitements{
+        display: block;
+        width: 100%;
+        margin:  15vh auto 0;
+        z-index: 9;
+        background: black;
+    }
+
+    .traitements-title-container {
+        display:flex;
+        text-align:center;
+        align-items: center;
+        justify-content:center;
+        width: 100%;
+        height: 150px;
+        background: url("../images/fond/traitementsfond.png") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .traitements-title {
+        font-size: 3rem;
+        padding: 2rem;
+    }
+
+    .traitements-element-title {
+        font-size: 1.5rem;
+        padding: 3rem;
+    }
+
+    .traitements-element-text{
+        width: 100%;
+        margin:auto;
+        text-align:justify;
+        font-size: 1.8vw;
+        padding:2rem;
+    }
+
+    .traitements-element-title-white-underline {
+        width: 80%;
+        height: 1px;
+        margin: 2rem auto;
+        background-color: white;
+    }
+
+    
+
+}

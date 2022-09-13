@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" type="image/png" href="./public/assets/images/logos/favicon.png"/>
+    <title>Connectez-vous</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+    <style>
+        html {
+            background: url("./public/images/fond/login-fond.png") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-container fade-in">
+            <div class="login-left-box">
+                <a href="/"><img  src="./public/images/logos/CDCR-Logo.png" class="CDCR-login"></a>
+            </div>
+            <div class="login-right-box">
+                <div class="form-container">
+                    <form method="post" class="login-form">
+                    
+                        <div class="email-box">
+                            <div class="form-caps"><label class="login-form-label" for="inputEmail">Email</label></div>
+                            <div class="form-caps"><input class="login-form-input" type="email" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus></div>
+                        </div>
+            
+                        <div class="password-box">    
+                            <div class="form-caps"><label class="login-form-label" for="inputPassword">Mot de Passe</label></div>
+                            <div class="form-caps"><input class="login-form-input" type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required></div>
+                        </div>
+            
+                        <div class="form-caps">
+                            <a href="" class="forgotten-password-link">Mot de passe oublié ? Cliquez ici</a>
+                        </div>
+                        <div class="form-caps">
+                            <button class="login-form-button form-caps" type="submit">
+                                S'identifier
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type = "text/javascript" src="./public/js/script.js"></script>
+</body>
+</html>
