@@ -1,0 +1,40 @@
+
+/*------------------------------------------------------ CSS Landing ------------------------------------------------------*/
+
+
+div.container-landing-page {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    display: block;
+}
+
+.landing-first-container {
+    width: 100vw;
+    margin: auto;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.landing-second-container {
+    width: 100vw;
+    margin: auto;
+    height: 10vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+#CDCR1{
+    width: clamp(80px, 20%, 250px);
+}
+
+#CDCR2{
+    width: clamp(80px, 25%, 300px);
+}
+
+.fleche {
+    width: 1.8rem;
+}

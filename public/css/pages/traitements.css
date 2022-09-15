@@ -1,0 +1,21 @@
+/*---------------------Css Traitements----------------------------*/
+
+.traitements-element {
+    width: 80%;
+    margin:auto;
+    padding-bottom: 0.45rem;
+    text-align: center;
+}
+
+.traitements-element-title {
+    font-size: 1.9rem;
+    padding: 1rem 0;
+    text-align: center;
+    filter: drop-shadow(0 0 0.45rem rgba(0, 0, 0, 0.24));
+}
+
+.traitements-element-texte {
+    font-size: 1.1rem;
+    text-align: justify;
+    filter: drop-shadow(0 0 0.45rem rgba(0, 0, 0, 0.24));
+}

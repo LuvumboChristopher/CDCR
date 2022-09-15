@@ -1,0 +1,63 @@
+.open, .close {
+    font-size: 2.5rem;
+    margin: auto 0.5rem;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.menuIcon {
+    display: block;
+}
+
+.xIcon {
+    display: none;
+}
+
+.nav-responsive-container {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    color: white;
+    visibility: hidden;
+    transition: transform 0.5s;
+}
+
+.showMenu {
+    width: 100%;
+    margin: 1rem auto;
+    visibility: visible;
+    transition: transform 0.5s; 
+}
+
+.menu {
+    width: 85%;
+    margin: auto;
+    list-style: none;
+    padding: 3rem 0;
+    border: 1px solid white;
+    border-radius: 7px;
+    background-color:rgba(0, 0, 0, 0.86);
+}
+
+.nav-responsive-ul-li-icon {
+    font-size: 1.3rem;
+    margin-right: 1rem;
+}
+
+@media screen and (min-width: 915px) {
+    .showMenu {
+        margin: 5rem auto;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+
+    .nav-responsive-ul-li {
+        width: 85%;
+        font-size: 1.3rem;
+        padding: 0.4rem;
+    }
+    
+}

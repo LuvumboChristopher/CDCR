@@ -1,0 +1,34 @@
+/*---------------------Css FAQ----------------------------*/
+
+.faq-content-box{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.faq-article {
+    width: 100%;
+    margin: auto;
+    padding: 0.5rem;
+}
+
+.faq-article-title {
+    width: 90%;
+    margin: 1.2rem auto 0.3rem;
+    padding: 1rem 0;
+    text-align: start;
+    font-size: 2.3rem;
+    filter: drop-shadow(0 0 0.75rem black);
+    
+
+}
+
+.faq-article-text{
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+    font-size: 1.1rem;
+    filter: drop-shadow(0 0 0.75rem black);
+}

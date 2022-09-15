@@ -1,0 +1,86 @@
+.nav-sub-menu {
+    width: 100%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.452);
+}
+
+.nav-sub-menu-container {
+    width: 90%;
+    height: 7vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;  
+    
+}
+
+.nav-sub-icons-container, .nav-sub-rdv-container, .nav-sub-horaires-container  {
+    display: inline-flex;
+    align-items: center;
+    justify-content:space-around;
+    
+}
+
+.nav-sub-icons-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto 0.6rem;
+}
+
+.nav-sub-icons-link-title {
+    display: block;
+    margin-left:0.5rem;
+}
+
+.nav-sub-icons-link-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ion-icon {
+    font-size: 1.5rem;
+    margin: 0 0.25rem;
+}
+
+.nav-sub-horaire-icon-container {
+    display: flex;
+    align-items: center;
+    margin-left: 0.5rem;
+}
+
+.nav-sub-horaire-icon {
+    font-size: 2rem;
+    margin-right: 0.5rem;
+}
+
+.nav-sub-horaires-text {
+    text-align: start;
+}
+
+.responsive-menu {
+    display: none;
+}
+
+
+@media screen and (max-width: 1280px) {
+    .nav-sub-rdv-container{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1080px) {
+    .responsive-menu {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 914px) {
+    .nav-sub-menu {
+        display: none;
+    }
+  
+}

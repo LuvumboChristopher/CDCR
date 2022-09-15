@@ -1,0 +1,64 @@
+/*---------------------Css Nous Sommes----------------------------*/
+
+
+.nous-sommes-content-tr {
+    width: 50%;
+    margin: auto 1rem;
+}
+
+.nous-sommes-content-td {
+    width: 50%;
+    margin: auto;
+    height: 63vh;
+}
+
+.nous-sommes-td-title {
+    width: 90%;
+    margin: 1.5rem auto;
+    text-align: start;
+    font-size: 1.8em;
+    filter: drop-shadow(0 0 0.75rem black);
+}
+
+.nous-sommes-td-text{
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+    filter: drop-shadow(0 0 0.75rem black);
+}
+
+.nous-sommes-first-image {
+    width: 90%;
+    height: 43vh;
+    margin: auto;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 0.45rem rgba(0, 0, 0, 0.24));
+    background-image: url(../images/bdd/little-boy-patient-dentist-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nous-sommes-second-image {
+    width: 90%;
+    height: 43vh;
+    margin: auto;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 0.45rem rgba(0, 0, 0, 0.24));
+    background-image: url(../images/bdd/little-boy-patient-dentist-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nous-sommes-third-image {
+    width: 90%;
+    height: 43vh;
+    margin: auto;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 0.45rem rgba(0, 0, 0, 0.24));
+    background-image: url(../images/bdd/little-boy-patient-dentist-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
