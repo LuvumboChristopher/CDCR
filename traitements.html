@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" type="image/png" href="./public/assets/images/logos/favicon.png"/>
     <title>Traitements - Cabinet de chirurgie dentaire 108 Bd Croix Rousse</title>
-    <link rel="stylesheet" href="./public/css/style.css">
+    <!-- <link rel="stylesheet" href="./public/css/style.css"> -->
+
+    <link rel="stylesheet" href="./public/css/partials/header.css">
+    <link rel="stylesheet" href="./public/css/partials/banner.css">
+    <link rel="stylesheet" href="./public/css/partials/responsive.css">
+    <link rel="stylesheet" href="./public/css/partials/footer.css">
+    <link rel="stylesheet" href="./public/css/pages/traitements.css">
+    <link rel="stylesheet" href="./public/css/global.css">
+    <link rel="stylesheet" href="./public/css/partials.css">
     <style>
         html {
             background: url("./public/images/fond/traitements-fond.png") no-repeat center center fixed;
@@ -17,16 +25,19 @@
     </style>
 </head>
 <body>
+    <div class="wrapper">
+
+ 
     
         <!-- Header Content-->
-        <header>
-            <nav class="nav header-center">
-                <section class="nav-content-box-center">
+        <header class="header">
+            <nav class="nav header-center fade-in">
+                <div class="nav-content-box-center">
                     <div class="nav-content-left">
                         <ul class="nav-content-ul">
-                            <li class="nav-responsive-ul-li"> <a href="accueil.html" class="header-link">Accueil</a> </li>
-                            <li class="nav-responsive-ul-li"> <a href="nous-sommes.html" class="header-link">Nous sommes</a> </li>
-                            <li class="nav-responsive-ul-li"> <a href="traitements.html" class="header-link">Traitements</a> </li>
+                            <li class="nav-responsive-ul-li"> <a href="accueil.html" class="">Accueil</a> </li>
+                            <li class="nav-responsive-ul-li"> <a href="nous-sommes.html" class="">Nous sommes</a> </li>
+                            <li class="nav-responsive-ul-li"> <a href="traitements.html" class="">Traitements</a> </li>
                         </ul>
                     </div>
                     <div class="nav-content-center">
@@ -34,81 +45,63 @@
                     </div>
                     <div class="nav-content-right">
                         <ul class="nav-content-ul">
-                            <li class="nav-responsive-ul-li"> <a href="nos-equipes.html" class="header-link">Nos Equipes</a> </li>
-                            <li class="nav-responsive-ul-li"> <a href="faq.html" class="header-link">FAQ</a> </li>
-                            <li class="nav-responsive-ul-li"> <a href="contact.html" class="header-link">Contact & Acces</a> </li>
+                            <li class="nav-responsive-ul-li"> <a href="nos-equipes.html" class="">Nos Equipes</a> </li>
+                            <li class="nav-responsive-ul-li"> <a href="faq.html" class="">FAQ</a> </li>
+                            <li class="nav-responsive-ul-li"> <a href="contact.html" class="">Contact & Acces</a> </li>
                         </ul> 
-                    </div>
-                    <div class="admin-menu">
-                        <ion-icon name="finger-print-outline" class="connexion"></ion-icon>
-                        <span class="menuIcon material-icons">
-                            <a href="admin.html" class="connexion-link"></ion-icon>S'identifier</a>
-                        </span> 
-                    </div>      
-                </section>
-                
-                <section class="nav-responsive-content-box">
-                    <div class="nav-rdv">
-                        <a href="https://goo.gl/maps/rBmLMs35P9hm1gXr5" target="_blank" class="nav-sub-rdv-link">Prenez Rendez-vous</a>
-                    </div>
-                </section>
-            </nav>
-           <nav class="nav header-left ">
-                <section class="nav-content-box">
+                    </div> 
+                </div>
+            </nav>  
+            <nav class="nav header-responsive fade-in">
+                <div class="nav-content-box">
                     <div class="nav-content-left">
-                        <a class="nav-content-image-link" href="/" ><img src="./public/images/logos/CDCR-Logo.png" alt="LogoCDCR" class="nav-content-image"></a>
-                        <ul class="nav-content-ul">
-                            <li class="nav-responsive-ul-li"> <a href="accueil.html" class="header-link">Accueil</a> </li>
-                            <li class="nav-responsive-ul-li"> <a href="nous-sommes.html" class="header-link">Nous sommes</a> </li>
-                            <li class="nav-responsive-ul-li"> <a href="traitements.html" class="header-link">Traitements</a> </li>
-                            <li class="nav-responsive-ul-li"> <a href="nos-equipes.html" class="header-link">Nos Equipes</a> </li>
-                            <li class="nav-responsive-ul-li"> <a href="faq.html" class="header-link">FAQ</a> </li>
-                            <li class="nav-responsive-ul-li"> <a href="contact.html" class="header-link">Contact & Acces</a> </li>                   
+                        <a  href="/" ><img src="./public/images/logos/CDCR-Logo.png" class="nav-content-center-image" alt="LogoCDCR"></a>
+                        <ul class="nav-content-ul fade-in">
+                            <li class="nav-responsive-ul-li"> <a href="accueil.html" class="">Accueil</a> </li>
+                            <li class="nav-responsive-ul-li"> <a href="nous-sommes.html" class="">Nous sommes</a> </li>
+                            <li class="nav-responsive-ul-li"> <a href="traitements.html" class="">Traitements</a> </li>
+                            <li class="nav-responsive-ul-li"> <a href="nos-equipes.html" class="">Nos Equipes</a> </li>
+                            <li class="nav-responsive-ul-li"> <a href="faq.html" class="">FAQ</a> </li>
+                            <li class="nav-responsive-ul-li"> <a href="contact.html" class="">Contact & Acces</a> </li>                   
                         </ul>
                     </div>
-                    <a href="admin.html" class="admin-link"><ion-icon name="finger-print-outline" class="fingerprint"></ion-icon>S'identifier</a>
-                </section> 
-                <section class="nav-responsive-content-box">
-                    <div class="nav-rdv">
-                        <a href="https://goo.gl/maps/rBmLMs35P9hm1gXr5" target="_blank" class="nav-sub-rdv-link">Prenez Rendez-vous</a>         
-                    </div> 
-                </section>
-            </nav>
+                    <div class="header-responsive-box">
+                        <div>
+                            <a href="https://goo.gl/maps/rBmLMs35P9hm1gXr5" target="_blank" class="header-rdv-link">Prenez Rendez-vous</a>         
+                        </div>
+                        <div class="menu-burger fade-in">
+                            <span>
+                                <ion-icon name="menu" class="open"></ion-icon>
+                            </span>
+                            <span>
+                                <ion-icon name="close" class="close xIcon"></ion-icon>
+                            </span>
+                        </div> 
+                    </div>               
+                </div>      
+            </nav> 
         </header>
-       
+        <div class="responsive-menu">
             
-       
-        <!-- <div class="responsive-menu">
-        <div class="menu-burger">
-            <span>
-                <ion-icon name="menu" class="open"></ion-icon>
-            </span>
-            <span>
-                <ion-icon name="close" class="close xIcon"></ion-icon>
-            </span>
+            <div class="nav-responsive-container fade-in">  
+                <ul class="menu">
+                    <li> <a href="accueil.html" class="nav-responsive-ul-li ">
+                        <ion-icon name="home-outline" class="nav-responsive-ul-li-icon"></ion-icon>Accueil</a>
+                    </li>
+                    <li> <a href="nous-sommes.html" class="nav-responsive-ul-li  ">
+                        <ion-icon name="people-outline" class="nav-responsive-ul-li-icon"></ion-icon>Nous sommes</a> </li>
+                    <li> <a href="traitements.html" class="nav-responsive-ul-li  ">
+                        <ion-icon name="medkit-outline" class="nav-responsive-ul-li-icon"></ion-icon>Traitements</a> </li>
+                    <li> <a href="nos-equipes.html" class="nav-responsive-ul-li  ">
+                        <ion-icon name="accessibility-outline" class="nav-responsive-ul-li-icon"></ion-icon>Nos Equipes</a> </li>
+                    <li> <a href="faq.html" class="nav-responsive-ul-li  ">
+                        <ion-icon name="search-outline"class="nav-responsive-ul-li-icon"></ion-icon>FAQ</a> </li>
+                    <li> <a href="contact.html" class="nav-responsive-ul-li   ">
+                        <ion-icon name="location-outline" class="nav-responsive-ul-li-icon"></ion-icon>Contact & Acces</a> </li>
+                </ul>
+            </div>
         </div>
-        <div class="nav-responsive-container">
-            
-            <ul class="menu">
-                <li> <a href="accueil.html" class="nav-responsive-ul-li header-link">
-                    <ion-icon name="home-outline" class="nav-responsive-ul-li-icon"></ion-icon>Accueil</a>
-                </li>
-                <li> <a href="nous-sommes.html" class="nav-responsive-ul-li header-link header-link">
-                    <ion-icon name="people-outline" class="nav-responsive-ul-li-icon"></ion-icon>Nous sommes</a> </li>
-                <li> <a href="traitements.html" class="nav-responsive-ul-li header-link header-link">
-                    <ion-icon name="medkit-outline" class="nav-responsive-ul-li-icon"></ion-icon>Traitements</a> </li>
-                <li> <a href="nos-equipes.html" class="nav-responsive-ul-li header-link header-link">
-                    <ion-icon name="accessibility-outline" class="nav-responsive-ul-li-icon"></ion-icon>Nos Equipes</a> </li>
-                <li> <a href="faq.html" class="nav-responsive-ul-li header-link header-link">
-                    <ion-icon name="search-outline"class="nav-responsive-ul-li-icon"></ion-icon>FAQ</a> </li>
-                <li> <a href="contact.html" class="nav-responsive-ul-li header-link header-link ">
-                    <ion-icon name="location-outline" class="nav-responsive-ul-li-icon"></ion-icon>Contact & Acces</a> </li>
-            </ul>
 
-            <a href="admin.html" class="admin-link-menu"><ion-icon name="finger-print-outline" class="fingerprint-menu"></ion-icon>S'identifier</a>
-
-        </div>
-        </div>-->
         <div class="nav-sub-menu fade-in">
             <div class="nav-sub-menu-container">
 
@@ -203,9 +196,9 @@
                 
                 <div class="footer-container-right">
                     <ul class="footer-ul">
-                        <li class="footer-ul-li"><a href="#" class="footer-text header-link">Metions Legales</a></li>
-                        <li class="footer-ul-li"><a href="#" class="footer-text header-link">Politique de Confidentialite</a></li>
-                        <li class="footer-ul-li"><a href="#" class="footer-text header-link">Plan du Site</a></li>
+                        <li class="footer-ul-li"><a href="#" class="footer-text ">Metions Legales</a></li>
+                        <li class="footer-ul-li"><a href="#" class="footer-text ">Politique de Confidentialite</a></li>
+                        <li class="footer-ul-li"><a href="#" class="footer-text ">Plan du Site</a></li>
                     </ul>
                 </div>           
             </div>
@@ -222,7 +215,7 @@
                     
                     <div class="footer-icons-contact-container">
                         <a href="tel:0123456789"  class="footer-icons-link" >
-                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                            <ion-icon name="call-outline"></ion-icon>
                             <span class="footer-icons-link-title">01 23 45 67 89</span>
                         </a>
                     </div>
@@ -239,7 +232,7 @@
                 </div>
             </div>
         </footer>
-    
+    </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script type = "text/javascript" src="./public/js/script.js"></script>
