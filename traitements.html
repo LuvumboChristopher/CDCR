@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="icon" type="image/png" href="./public/assets/images/logos/favicon.png"/>
+    <link rel="icon" type="image/png" href="./public/images/logos/favicon.png"/>
     <title>Traitements - Cabinet de chirurgie dentaire 108 Bd Croix Rousse</title>
-    <!-- <link rel="stylesheet" href="./public/css/style.css"> -->
 
     <link rel="stylesheet" href="./public/css/partials/header.css">
     <link rel="stylesheet" href="./public/css/partials/banner.css">
@@ -14,6 +13,11 @@
     <link rel="stylesheet" href="./public/css/pages/traitements.css">
     <link rel="stylesheet" href="./public/css/global.css">
     <link rel="stylesheet" href="./public/css/partials.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;800&display=swap" rel="stylesheet">
+
     <style>
         html {
             background: url("./public/images/fond/traitements-fond.png") no-repeat center center fixed;
@@ -26,41 +30,51 @@
 </head>
 <body>
     <div class="wrapper">
-
- 
-    
-        <!-- Header Content-->
+        <div class="responsive-menu">
+            <div class="nav-responsive-container fade-in"> 
+                <div class="menu">
+                    <ul >
+                        <li> <a href="nous-sommes.html" class="nav-responsive-ul-li  ">
+                            Nous Sommes</a> </li>
+                        <li> <a href="traitements.html" class="nav-responsive-ul-li  ">
+                            Traitements</a> </li>
+                        <li> <a href="faq.html" class="nav-responsive-ul-li  ">
+                            FAQ</a> </li>
+                        <li> <a href="contact.html" class="nav-responsive-ul-li   ">
+                           Contact</a> </li>
+                    </ul>
+                </div>   
+            </div>
+        </div>
         <header class="header">
             <nav class="nav header-center fade-in">
                 <div class="nav-content-box-center">
                     <div class="nav-content-left">
                         <ul class="nav-content-ul">
-                            <li class="nav-responsive-ul-li"> <a href="accueil.html" class="">Accueil</a> </li>
-                            <li class="nav-responsive-ul-li"> <a href="nous-sommes.html" class="">Nous sommes</a> </li>
-                            <li class="nav-responsive-ul-li"> <a href="traitements.html" class="">Traitements</a> </li>
+                            <li class="nav-content-ul-li"> <a 
+                                href="nous-sommes.html" class="nav__link">Nous sommes</a> </li>
+                            <li class="nav-content-ul-li"> <a href="traitements.html" class="nav__link">Traitements</a> </li>
                         </ul>
                     </div>
                     <div class="nav-content-center">
-                        <a class="nav-content-center-image-link" href="/" ><img src="./public/images/logos/CDCR-Logo.png" alt="LogoCDCR" class="nav-content-center-image"></a>
+                        <a class="nav-content-center-image-link" href="accueil.html" ><h1 class="LogoFont">CDCR</h1></a>    
                     </div>
                     <div class="nav-content-right">
                         <ul class="nav-content-ul">
-                            <li class="nav-responsive-ul-li"> <a href="nos-equipes.html" class="">Nos Equipes</a> </li>
-                            <li class="nav-responsive-ul-li"> <a href="faq.html" class="">FAQ</a> </li>
-                            <li class="nav-responsive-ul-li"> <a href="contact.html" class="">Contact & Acces</a> </li>
+                            <li class="nav-content-ul-li"> <a href="faq.html" class="nav__link">FAQ</a> </li>
+                            <li class="nav-content-ul-li"> <a href="contact.html" class="nav__link">Contact & Acces</a> </li>
                         </ul> 
                     </div> 
                 </div>
-            </nav>  
+            </nav>
+              
             <nav class="nav header-responsive fade-in">
                 <div class="nav-content-box">
                     <div class="nav-content-left">
-                        <a  href="/" ><img src="./public/images/logos/CDCR-Logo.png" class="nav-content-center-image" alt="LogoCDCR"></a>
+                        <a  href="accueil.html" ><h1 class="LogoFont">CDCR</h1></a>
                         <ul class="nav-content-ul fade-in">
-                            <li class="nav-responsive-ul-li"> <a href="accueil.html" class="">Accueil</a> </li>
                             <li class="nav-responsive-ul-li"> <a href="nous-sommes.html" class="">Nous sommes</a> </li>
                             <li class="nav-responsive-ul-li"> <a href="traitements.html" class="">Traitements</a> </li>
-                            <li class="nav-responsive-ul-li"> <a href="nos-equipes.html" class="">Nos Equipes</a> </li>
                             <li class="nav-responsive-ul-li"> <a href="faq.html" class="">FAQ</a> </li>
                             <li class="nav-responsive-ul-li"> <a href="contact.html" class="">Contact & Acces</a> </li>                   
                         </ul>
@@ -81,98 +95,32 @@
                 </div>      
             </nav> 
         </header>
-        <div class="responsive-menu">
-            
-            <div class="nav-responsive-container fade-in">  
-                <ul class="menu">
-                    <li> <a href="accueil.html" class="nav-responsive-ul-li ">
-                        <ion-icon name="home-outline" class="nav-responsive-ul-li-icon"></ion-icon>Accueil</a>
-                    </li>
-                    <li> <a href="nous-sommes.html" class="nav-responsive-ul-li  ">
-                        <ion-icon name="people-outline" class="nav-responsive-ul-li-icon"></ion-icon>Nous sommes</a> </li>
-                    <li> <a href="traitements.html" class="nav-responsive-ul-li  ">
-                        <ion-icon name="medkit-outline" class="nav-responsive-ul-li-icon"></ion-icon>Traitements</a> </li>
-                    <li> <a href="nos-equipes.html" class="nav-responsive-ul-li  ">
-                        <ion-icon name="accessibility-outline" class="nav-responsive-ul-li-icon"></ion-icon>Nos Equipes</a> </li>
-                    <li> <a href="faq.html" class="nav-responsive-ul-li  ">
-                        <ion-icon name="search-outline"class="nav-responsive-ul-li-icon"></ion-icon>FAQ</a> </li>
-                    <li> <a href="contact.html" class="nav-responsive-ul-li   ">
-                        <ion-icon name="location-outline" class="nav-responsive-ul-li-icon"></ion-icon>Contact & Acces</a> </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="nav-sub-menu fade-in">
-            <div class="nav-sub-menu-container">
-
-                <div class="nav-sub-horaires-container">
-                    <div class="nav-sub-horaire-icon-container">
-                        <ion-icon name="time-outline" class="nav-sub-horaire-icon"></ion-icon> 
-                    </div>
-                    <div>
-                        <p class="nav-sub-horaires-text" >Du Lundi au Vendredi de 9h à 13h et de 14h à 18h</p>
-                    </div>
-                </div>
-
-                <div class="nav-sub-rdv-container">
-                    <ion-icon name="calendar-outline" class="ion-icon"></ion-icon>
-                    <span class="menuIcon material-icons">
-                        <a href="nos-equipes.html" class="nav-sub-icons-link-title">Prenez Rendez-vous</a>
-                    </span> 
-                </div>
-            
-                <div class="nav-sub-icons-container">
-                    <a href="contact.html" class="nav-sub-icons-link" target="_blank">
-                        <span class="nav-sub-icons-link-icon">
-                            <ion-icon name="mail-unread-outline" class="ion-icon"></ion-icon>
-                        </span>
-                        <span class="nav-sub-icons-link-title">Message</span>
-                    </a>   
-                    <a href="tel:0123456789"  class="nav-sub-icons-link" target="_blank">
-                        <span class="nav-sub-icons-link-icon">
-                            <ion-icon name="phone-portrait-outline" class="ion-icon"></ion-icon>
-                        </span>
-                        <span class="nav-sub-icons-link-title">01 23 45 67 89</span>
-                    </a>       
-                    <a href="https://goo.gl/maps/rBmLMs35P9hm1gXr5"  class="nav-sub-icons-link" target="_blank">
-                        <span class="nav-sub-icons-link-icon">
-                            <ion-icon name="trail-sign-outline" class="ion-icon"></ion-icon>
-                        </span>
-                        <span class="nav-sub-icons-link-title">Acces</span>
-                    </a>
-                </div>
-            
-            </div>
-        </div> 
         <!-- Main Content-->
-
         <div class="container">
-            <aside class="aside">
-                <a href="nous-sommes.html" class="aside-link"><ion-icon name="arrow-back-outline" alt="Fleche droite" class="aside-link-img"></ion-icon></a>
-            </aside>
+          
             <main class="main">
                 <div class="scroll">
                     <section id="traitements">
                         <div class="traitements-content-box fade-in">
                             <article class="traitements-element">
                                 <h2 class="traitements-element-title">Soins traditionelles</h2>
-                                <p class="traitements-element-texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum, purus quis rutrum porta, tortor nisl congue dolor, sit amet sagittis libero metus scelerisque neque. Mauris commodo nisi at libero interdum, ac porttitor neque mollis. Mauris ultricies interdum rutrum. Curabitur posuere porta dignissim. Donec scelerisque ex purus, in consectetur ligula pretium ut. Sed efficitur, dolor, sit amet sagittis libero metus scelerisque neque. Mauris commodo nisi at libero interdum, ac porttitor neque mollis augue sit amet lacinia congue, tor nisl congue dolor, sit amet sagittis libero metus scelerisque neque. Mauris commodo nisi at libero ante mauris scelerisque neque, in sodales magna neque sit amet erat. In pretium quis sem in porta. </p>
+                                <p class="traitements-element-texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum, purus quis rutrum porta, tortor nisl congue dolor, sit amet sagittis libero metus scelerisque neque. Mauris commodo nisi at libero interdum, ac porttitor neque mollis. Mauris ultricies interdum rutrum. Curabitur posuere porta dignissim. Donec scelerisque ex purus, in consectetur ligula pretium ut.Mauris ultricies interdum rutrum. Curabitur posuere porta dignissim. Donec scelerisque ex purus, in consectetur ligula pretium ut. Sed efficitur, dolor, sit amet sagittis libero metus scelerisque neque. Mauris commodo nisi at libero interdum, ac porttitor neque mollis augue sit amet lacinia congue, tor nisl congue</p>
                             </article>
                             <article class="traitements-element">
                                 <h2 class="traitements-element-title">Orthodontie</h2>
-                                <p class="traitements-element-texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum, purus quis rutrum porta, tortor nisl congue dolor, sit amet sagittis libero metus scelerisque neque. Mauris commodo nisi at libero interdum, ac porttitor neque mollis. Mauris ultricies interdum rutrum. Curabitur posuere porta dignissim. Donec scelerisque ex purus, in consectetur ligula pretium ut. Sed efficitur, augue sit amet lacinia congue, ante mauris scelerisque neque, in sodales magna neque sit amet erat. In pretium quis sem in porta. </p>
+                                <p class="traitements-element-texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum, purus quis rutrum porta, tortor nisl congue dolor, sit amet sagittis libero metus scelerisque neque. Mauris commodo Sed efficitur, dolor, sit amet sagittis libero metus scelerisque neque. Mauris commodo nisi at libero interdum, ac porttitor neque mollis augue sit amet lacinia congue, tor nisl congue dolor, sit amet sagittis libero metus scelerisque nequettis libero metus scelerisque neque. Mauris commodo nisi at libero ante mauris scelerisque neque, in sodales magna neque sit amet erat. In pret  nisi at libero interdum, ac porttitor neque mollis. Mauris ultricies interdum rutrum. Curabitur posuere porta dignissim. Donec scelerisque ex purus, in consectetur ligula pretium ut. Sed efficitur, augue sit amet lacinia congue, ante mauris.</p>
                             </article>     
                             <article class="traitements-element">
                                 <h2 class="traitements-element-title">Endodontie</h2>
-                                <p class="traitements-element-texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum, purus quis rutrum porta, tortor nisl congue dolor, sit amet sagittis libero metus scelerisque neque. Mauris commodo nisi at libero interdum, ac porttitor neque mollis. Mauris ultricies interdum rutrum. Curabitur posuere porta dignissim. Donec scelerisque ex purus, in consectetur ligula pretium ut. Sed efficitur, augue sit amet lacinia congue, ante  dolor, sit amet sagittis libero metus scelerisque neque. Mauris commodo nisi at libero interdum, ac porttitor neque mollis. Mauris ultriciesmauris scelerisque neque, in sodales magna neque sit amet erat. In pretium quis sem in porta. </p>
+                                <p class="traitements-element-texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum, purus quis rutrum porta, tortor nisl congue dolor, sit amet sagittis libero metus scelerisque neque. Mauris commodo nisi at libero interdum, ac porttitor neque mollis. Mauris ultricies interdum rutrum. Curabitur posuere porta dignissim. Donec scelerisque ex purus, in consectetur ligula pretium ut. Sed efficitur, augue sit amet lacinia congue, ante  dolor, sit amet sagittis libero metus que. Mauris commodo nisi at libero interdum, ac porttitor neque mollis. Mauris ultricies interdum rutrum. Curabitur posuere  scelerisque neque. Mauris commodo nisi at libero interdum, ac porttitor neque mollis. Mauris ultriciesmauris  Sed efficitur, dolor, sit amet sagittis libero metus scelerisque neque. Mauris commodo nisi at libero interdum, ac porttitor neque mollis augue sit amet lacinia congue, tor nisl congue dolor, sit amet sagittis libero metus scelerisque neque. Mauris commodo nisi at libero ante mauris scelerisque neque, in sodales magna neque sit amet erat. In pret  Sed efficitur, dolor, sit amet sagittis libero metus </p>
                             </article>
                             <article class="traitements-element">
                                 <h2 class="traitements-element-title">Prothèses dentaires</h2>
-                                <p class="traitements-element-texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum, purus quis rutrum porta, tortor nisl congue dolor, sit amet sagittis libero metus scelerisque neque. Mauris commodo nisi at libero interdum, ac porttitor neque mollis. Mauris ultricies interdum rutrum. Curabitur posuere porta dignissim. Donec scelerisque ex purus, in consectetur ligula pretium ut. Sed efficitur, augue sit amet lacinia congue, ante mauris scelerisque neque, in sodales magna neque sit amet erat. In pretium quis sem in porta. </p>
+                                <p class="traitements-element-texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum, purus quis rutrum porta, tortor nisl congue dolor, sit amet sagittis libero metus scelerisque neque. Mauris commodo nisi at libero interdum, ac porttitor neque mollis. Mauris ultricies interdum rutrum. Curabitur posuere porta dignissim. Donec scelerisque ex purus, in consectetur ligula pretium ut. Sed efficitur, augue sit amet lacinia congue, ante mauris scelerisque neque, in sodales magna neque sit amet erat. In pretium quis sem in scelerisque neque. Mauris commodo nisi at libero interdum porta. </p>
                             </article>        
                             <article class="traitements-element">
                                 <h2 class="traitements-element-title">Extraction dentaire</h2>
-                                <p class="traitements-element-texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum, purus quis rutrum porta, tortor nisl congue dolor, sit amet sagittis libero metus scelerisque neque. Mauris commodo nisi at libero interdum, ac porttitor neque mollis. Mauris ultricies interdum rutrum. Curabitur posuere porta dignissim. Donec scelerisque ex purus, dolor, sit amet sagittis libero metus scelerisque neque. Mauris commodo nisi at libero interdum, ac porttitor neque mollis. Mauris ultricies in consectetur ligula pretium ut. Sed efficitur, augue sit amet lacinia congue, ante mauris scelerisque neque, in sodales magna neque sit amet erat. In pretium quis sem in porta. </p>
+                                <p class="traitements-element-texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum, purus quis rutrum porta, tortor nisl congue dolor, sit amet sagittis libero metus scelerisque neque. Mauris commodo nisi at libero interdum, ac porttitor neque mollis. Mauris ultricies interdum rutrum. Curabitur posuere porta dignissim. Donec scelerisque ex purus, dolor, sit amet sagittis libero metus scelerisque neque. Mauris commodo nisi at libero interdum, ac porttitor neque que. Mauris commodo nisi at libero interdum, ac porttitor neque mollis. Mauris ultricies interdum rutrum. Curabitur posuere  que. Mauris commodo nisi at libero interdum, ac porttitor neque mollis. Mauris ultricies interdum rutrum. Curabitur posuere  mollis. Mauris ultricies in consectetur ligula pretium ut. Sed efficitur, augue sit amet lacinia congue, ante mauris scelerisque neque, in sodales magna neque sit amet erat. In pretium quis sem in porta. </p>
                             </article>
                             <article class="traitements-element">
                                 <h2 class="traitements-element-title">Parodontologie </h2>
@@ -182,54 +130,15 @@
                     </section>
                 </div>
             </main>
-            <aside class="aside">
-                <a href="nos-equipes.html" class="aside-link"><ion-icon name="arrow-forward-outline" alt="Fleche droite" class="aside-link-img"></ion-icon></a>
-            </aside>
+         
         </div>
         <!-- Footer Content-->
         <footer>
             <div class="footer-container-box">
         
                 <div class="footer-container-left">
-                    <a href="#" class="footer-text" >Cabinet de chirurgie dentaire Croix-Rousse © 2021 Tous droits réservés.</a>
-                </div>   
-                
-                <div class="footer-container-right">
-                    <ul class="footer-ul">
-                        <li class="footer-ul-li"><a href="#" class="footer-text ">Metions Legales</a></li>
-                        <li class="footer-ul-li"><a href="#" class="footer-text ">Politique de Confidentialite</a></li>
-                        <li class="footer-ul-li"><a href="#" class="footer-text ">Plan du Site</a></li>
-                    </ul>
-                </div>           
-            </div>
-        
-            <div class="footer-responsive">
-                <div class="footer-responsive-content-box">
-        
-                    <div class="footer-icons-message-container">
-                        <a href="contact.html" class="footer-icons-link">
-                            <ion-icon name="mail-unread-outline"></ion-icon>
-                            <span class="footer-icons-link-title">Message</span>
-                        </a>
-                    </div>
-                    
-                    <div class="footer-icons-contact-container">
-                        <a href="tel:0123456789"  class="footer-icons-link" >
-                            <ion-icon name="call-outline"></ion-icon>
-                            <span class="footer-icons-link-title">01 23 45 67 89</span>
-                        </a>
-                    </div>
-        
-                    
-                    
-                    <div class="footer-icons-acces-container">
-                        <a href="https://goo.gl/maps/rBmLMs35P9hm1gXr5"  class="footer-icons-link">
-                            <ion-icon name="trail-sign-outline"></ion-icon>
-                            <span class="footer-icons-link-title">Acces</span>
-                        </a>
-                    </div>
-                    
-                </div>
+                    <a href="#" class="footer-text" >Cabinet de chirurgie dentaire Croix-Rousse © <script>document.write(new Date().getFullYear())</script> Tous droits réservés.</a>
+                </div>       
             </div>
         </footer>
     </div>

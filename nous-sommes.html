@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="icon" type="image/png" href="./public/assets/images/logos/favicon.png"/>
+    <link rel="icon" type="image/png" href="./public/images/logos/favicon.png"/>
     <title>Nous sommes - Cabinet de chirurgie dentaire 108 Bd Croix Rousse</title>
-    <link rel="stylesheet" href="./public/css/style.css">
+    
+    <link rel="stylesheet" href="./public/css/partials/header.css">
+    <link rel="stylesheet" href="./public/css/partials/banner.css">
+    <link rel="stylesheet" href="./public/css/partials/responsive.css">
+    <link rel="stylesheet" href="./public/css/partials/footer.css">
+    <link rel="stylesheet" href="./public/css/pages/nousSommes.css">
+
+    <link rel="stylesheet" href="./public/css/partials.css">
+
     <style>
         html {
             background: url("./public/images/fond/nous-sommes-fond.png") no-repeat center center fixed;
@@ -17,259 +25,173 @@
     </style>
 </head>
 <body>
-    <!-- Header Content-->
-    <header class="header-center">
-        <nav class="nav ">
-            <section class="nav-content-box-center">
-                <div class="nav-content-left">
-                    <ul class="nav-content-ul">
-                        <li class="nav-responsive-ul-li"> <a href="accueil.html" class="header-link">Accueil</a> </li>
-                        <li class="nav-responsive-ul-li"> <a href="nous-sommes.html" class="header-link">Nous sommes</a> </li>
-                        <li class="nav-responsive-ul-li"> <a href="traitements.html" class="header-link">Traitements</a> </li>
-                    </ul>
-                </div>
-                <div class="nav-content-center">
-                    <a class="nav-content-center-image-link" href="/" ><img src="./public/images/logos/CDCR-Logo.png" alt="LogoCDCR" class="nav-content-center-image"></a>
-                </div>
-                <div class="nav-content-right">
-                    <ul class="nav-content-ul">
-                        <li class="nav-responsive-ul-li"> <a href="nos-equipes.html" class="header-link">Nos Equipes</a> </li>
-                        <li class="nav-responsive-ul-li"> <a href="faq.html" class="header-link">FAQ</a> </li>
-                        <li class="nav-responsive-ul-li"> <a href="contact.html" class="header-link">Contact & Acces</a> </li>
-                    </ul>
-                    
-                </div>      
-            </section>
-            <div class="admin-menu">
-                <ion-icon name="finger-print-outline" class="conexxion"></ion-icon>
-                <span class="menuIcon material-icons">
-                    <a href="admin.html" class="connexion-link"></ion-icon>S'identifier</a>
-                </span> 
-            </div>
-            <section class="nav-responsive-content-box">
-                <div class="nav-rdv">
-                    <a href="https://goo.gl/maps/rBmLMs35P9hm1gXr5" target="_blank" class="nav-sub-rdv-link">Prenez Rendez-vous</a>
-                </div>
-            </section>
-        </nav>
-    </header>
-    <header class="header-left">
-            <nav class="nav ">
-
-                <section class="nav-content-box">
-
+        <!-- Header Content-->
+        <header class="header">
+            <nav class="nav header-center">
+                <div class="nav-content-box-center">
                     <div class="nav-content-left">
-                        <a class="nav-content-image-link" href="/" ><img src="./public/images/logos/CDCR-Logo.png" alt="LogoCDCR" class="nav-content-image"></a>
                         <ul class="nav-content-ul">
-                            <li class="nav-responsive-ul-li"> <a href="accueil.html" class="header-link">Accueil</a> </li>
-                            <li class="nav-responsive-ul-li"> <a href="nous-sommes.html" class="header-link">Nous sommes</a> </li>
-                            <li class="nav-responsive-ul-li"> <a href="traitements.html" class="header-link">Traitements</a> </li>
-                            <li class="nav-responsive-ul-li"> <a href="nos-equipes.html" class="header-link">Nos Equipes</a> </li>
-                            <li class="nav-responsive-ul-li"> <a href="faq.html" class="header-link">FAQ</a> </li>
-                            <li class="nav-responsive-ul-li"> <a href="contact.html" class="header-link">Contact & Acces</a> </li>                   
+                            <li class="nav-content-ul-li"> <a 
+                                aria-current="page" href="nous-sommes.html" class="nav__link">Nous sommes</a> </li>
+                            <li class="nav-content-ul-li"> <a href="traitements.html" class="nav__link">Traitements</a> </li>
                         </ul>
                     </div>
-                    
-                    <a href="admin.html" class="admin-link"><ion-icon name="finger-print-outline" class="fingerprint"></ion-icon>S'identifier</a>
+                    <div class="nav-content-center">
+                        <h1 class="LogoFont">CDCR</h1>   
+                    </div>
+                    <div class="nav-content-right">
+                        <ul class="nav-content-ul">
+                            <li class="nav-content-ul-li"> <a href="faq.html" class="nav__link">FAQ</a> </li>
+                            <li class="nav-content-ul-li"> <a href="contact.html" class="nav__link">Contact & Acces</a> </li>
+                        </ul> 
+                    </div> 
+                </div>
+            </nav>
+              
+            <nav class="nav header-responsive">
+                <div class="nav-content-box">
+                    <div class="nav-content-left">
+                        <h1 class="LogoFont">CDCR</h1>
+                        <ul class="nav-content-ul">
+                            <li class="nav-responsive-ul-li"> <a href="nous-sommes.html" class="">Nous sommes</a> </li>
+                            <li class="nav-responsive-ul-li"> <a href="traitements.html" class="">Traitements</a> </li>
+                            <li class="nav-responsive-ul-li"> <a href="faq.html" class="">FAQ</a> </li>
+                            <li class="nav-responsive-ul-li"> <a href="contact.html" class="">Contact & Acces</a> </li>                   
+                        </ul>
+                    </div>
+                    <div class="header-responsive-box">
+                        <div>
+                            <a href="https://goo.gl/maps/rBmLMs35P9hm1gXr5" target="_blank" class="header-rdv-link">Prenez Rendez-vous</a>         
+                        </div>
+                        <div class="menu-burger">
+                            <span>
+                                <ion-icon name="menu" class="open"></ion-icon>
+                            </span>
+                            <span>
+                                <ion-icon name="close" class="close xIcon"></ion-icon>
+                            </span>
+                        </div> 
+                    </div>               
+                </div>      
+            </nav> 
+        </header>
+        <div class="responsive-menu">
+            <div class="nav-responsive-container"> 
+                <div class="menu">
+                    <ul >
+                        <li> <a href="nous-sommes.html" class="nav-responsive-ul-li ">
+                            Nous Sommes</a> </li>
+                        <li> <a href="traitements.html" class="nav-responsive-ul-li  ">
+                            Traitements</a> </li>
+                        <li> <a href="faq.html" class="nav-responsive-ul-li  ">
+                            FAQ</a> </li>
+                        <li> <a href="contact.html" class="nav-responsive-ul-li   ">
+                        Contact</a> </li>
+                    </ul>
+                </div>   
+            </div>
+        </div>
+        <!-- Main Content-->
+        <div class="container">
+            <main class="main"> 
+                <div class="scroll">
+                    <div class="nous-sommes-container">
+                    <section>
+                        <div class="img-container">
+                            <img class="img" src="/public/images/carrousel/carrousel-1.jpg" alt="">
+                        </div>
+                        
+                        <div class="nous-sommes-text-container">
+                            <h2>
+                                Nous sommes
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                                molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                                numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                                optio, eaque rerum provident.
+                            </p>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="img-container">
+                            <img class="img" src="/public/images/carrousel/carrousel-2.jpg" alt="">
+                        </div>
+                        
+                        <div class="nous-sommes-text-container">
+                            <h2>
+                                Notre Engagement
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                                molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                                numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                                optio, eaque rerum! provident similique accusantium nemo autem.
+                            </p>
+                        </div>
+                        
+                        
+                    </section>
+                    <section>
+                        <div class="img-container">
+                            <img class="img" src="/public/images/carrousel/carrousel-3.jpg" alt="">
+                        </div>
+                        <div class="nous-sommes-text-container">
+                            <h2>
+                                Nos Services
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                                molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                                numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                                optio, eaque rerum! Provident similique accusantium nemo autem.
+                            </p>
+                        </div>
+                    </section>
+                    </div>
+                </div>
+            </main>
             
-                </section>
-                
-                <section class="nav-responsive-content-box">
-
-                    <div class="nav-rdv">
-                        <a href="https://goo.gl/maps/rBmLMs35P9hm1gXr5" target="_blank" class="nav-sub-rdv-link">Prenez Rendez-vous</a>         
+        </div>
+        <!-- Footer Content-->
+        <footer>
+            <div class="footer-container-box">
+        
+                <div class="footer-container-left">
+                    <a href="#" class="footer-text" >Cabinet de chirurgie dentaire Croix-Rousse © <script>document.write(new Date().getFullYear())</script> Tous droits réservés.</a>
+                </div>  
+            </div>
+            
+            <div class="footer-responsive">
+                <div class="footer-responsive-content-box">
+        
+                    <div class="footer-icons-message-container">
+                        <a href="contact.html" class="footer-icons-link">
+                            <ion-icon name="mail-unread-outline"></ion-icon>
+                            <span class="footer-icons-link-title">Message</span>
+                        </a>
                     </div>
                     
-                </section>
-
-            </nav>
-    </header>
-    <div class="responsive-menu">
-    <div class="menu-burger">
-        <span>
-            <ion-icon name="menu" class="open"></ion-icon>
-        </span>
-        <span>
-            <ion-icon name="close" class="close xIcon"></ion-icon>
-        </span>
-    </div>
-    <div class="nav-responsive-container">
+                    <div class="footer-icons-contact-container">
+                        <a href="tel:0123456789"  class="footer-icons-link" >
+                            <ion-icon name="call-outline"></ion-icon>
+                            <span class="footer-icons-link-title">01 23 45 67 89</span>
+                        </a>
+                    </div>
         
-        <ul class="menu">
-            <li> <a href="accueil.html" class="nav-responsive-ul-li header-link">
-                <ion-icon name="home-outline" class="nav-responsive-ul-li-icon"></ion-icon>Accueil</a>
-            </li>
-            <li> <a href="nous-sommes.html" class="nav-responsive-ul-li header-link header-link">
-                <ion-icon name="people-outline" class="nav-responsive-ul-li-icon"></ion-icon>Nous sommes</a> </li>
-            <li> <a href="traitements.html" class="nav-responsive-ul-li header-link header-link">
-                <ion-icon name="medkit-outline" class="nav-responsive-ul-li-icon"></ion-icon>Traitements</a> </li>
-            <li> <a href="nos-equipes.html" class="nav-responsive-ul-li header-link header-link">
-                <ion-icon name="accessibility-outline" class="nav-responsive-ul-li-icon"></ion-icon>Nos Equipes</a> </li>
-            <li> <a href="faq.html" class="nav-responsive-ul-li header-link header-link">
-                <ion-icon name="search-outline"class="nav-responsive-ul-li-icon"></ion-icon>FAQ</a> </li>
-            <li> <a href="contact.html" class="nav-responsive-ul-li header-link header-link ">
-                <ion-icon name="location-outline" class="nav-responsive-ul-li-icon"></ion-icon>Contact & Acces</a> </li>
-        </ul>
-
-        <a href="admin.html" class="admin-link-menu"><ion-icon name="finger-print-outline" class="fingerprint-menu"></ion-icon>S'identifier</a>
-
+                    
+                    
+                    <div class="footer-icons-acces-container">
+                        <a href="https://goo.gl/maps/rBmLMs35P9hm1gXr5"  class="footer-icons-link">
+                            <ion-icon name="trail-sign-outline"></ion-icon>
+                            <span class="footer-icons-link-title">Acces</span>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </footer>
     </div>
-    </div>
-    <div class="nav-sub-menu fade-in">
-        <div class="nav-sub-menu-container">
-
-            <div class="nav-sub-horaires-container">
-                <div class="nav-sub-horaire-icon-container">
-                    <ion-icon name="time-outline" class="nav-sub-horaire-icon"></ion-icon> 
-                </div>
-                <div>
-                    <p class="nav-sub-horaires-text" >Du Lundi au Jeudi de 9h à 13h et de 14h à 18h</p>
-                    <p class="nav-sub-horaires-text" >Le Vendredi de 9h à 13h et de 14h à 17h</p>
-                </div>
-            </div>
-
-            <div class="nav-sub-rdv-container">
-                <ion-icon name="calendar-outline" class="ion-icon"></ion-icon>
-                <span class="menuIcon material-icons">
-                    <a href="nos-equipes.html" class="nav-sub-icons-link-title">Prenez Rendez-vous</a>
-                </span> 
-            </div>
-        
-            <div class="nav-sub-icons-container">
-                <a href="tel:0123456789"  class="nav-sub-icons-link" target="_blank">
-                    <span class="nav-sub-icons-link-icon">
-                        <ion-icon name="phone-portrait-outline" class="ion-icon"></ion-icon>
-                    </span>
-                    <span class="nav-sub-icons-link-title">01 23 45 67 89</span>
-                </a>
-                <a href="contact.html" class="nav-sub-icons-link" target="_blank">
-                    <span class="nav-sub-icons-link-icon">
-                        <ion-icon name="mail-unread-outline" class="ion-icon"></ion-icon>
-                    </span>
-                    <span class="nav-sub-icons-link-title">Message</span>
-                </a>    
-                <a href="https://goo.gl/maps/rBmLMs35P9hm1gXr5"  class="nav-sub-icons-link" target="_blank">
-                    <span class="nav-sub-icons-link-icon">
-                        <ion-icon name="trail-sign-outline" class="ion-icon"></ion-icon>
-                    </span>
-                    <span class="nav-sub-icons-link-title">Acces</span>
-                </a>
-            </div>
-        
-        </div>
-    </div>
-    <!-- Main Content-->
-    <div class="container">
-        <aside class="aside">
-            <a href="accueil.html" class="aside-link"><ion-icon name="arrow-back-outline" alt="Fleche droite" class="aside-link-img"></ion-icon></a>
-        </aside>
-        <main class="main"> 
-            <div class="scroll">
-                    <table class="nous-sommes-content-box">
-                        <tbody class="nous-sommes-content-tbody">
-                        <tr class="nous-sommes-content-tr" >
-                            <td class="nous-sommes-content-td">
-                                <div class="nous-sommes-first-image">
-                                    
-                                </div>
-                            </td>
-                            <td class="nous-sommes-content-td">
-                                <h2 class="nous-sommes-td-title">
-                                    {{article1.titre}}
-                                </h2>
-                                <p class="nous-sommes-td-text">
-                                    {{article1.contenue}}
-                                </p>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <table class="nous-sommes-content-box">
-                        <tbody class="nous-sommes-content-tbody">
-                        <tr class="nous-sommes-content-tr">
-                            <td class="nous-sommes-content-td">
-                                <h2 class="nous-sommes-td-title">
-                                    {{article2.titre}}
-                                </h2>
-                                <p class="nous-sommes-td-text"> 
-                                    {{article2.contenue}}
-                                </p>
-                            </td>
-                            <td class="nous-sommes-content-td">
-                                <div class="nous-sommes-second-image"></div>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <table class="nous-sommes-content-box">
-                        <tbody class="nous-sommes-content-tbody">
-                        <tr class="nous-sommes-content-tr">
-                            <td class="nous-sommes-content-td">
-                                <div class="nous-sommes-third-image"></div>
-                            </td>
-                            <td class="nous-sommes-content-td">
-                                <h2 class="nous-sommes-td-title">
-                                    {{article3.titre}}
-                                </h2>
-                                <p class="nous-sommes-td-text">
-                                    {{article3.contenue}}
-                                </p>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-            </div>
-        </main>
-        <aside class="aside">
-            <a href="traitements.html" class="aside-link"><ion-icon name="arrow-forward-outline" alt="Fleche droite" class="aside-link-img"></ion-icon></a>
-        </aside> 
-    </div>
-    <!-- Footer Content-->
-    <footer>
-        <div class="footer-container-box">
-    
-            <div class="footer-container-left">
-                <a href="#" class="footer-text" >Cabinet de chirurgie dentaire Croix-Rousse © 2021 Tous droits réservés.</a>
-            </div>   
-            
-            <div class="footer-container-right">
-                <ul class="footer-ul">
-                    <li class="footer-ul-li"><a href="#" class="footer-text header-link">Metions Legales</a></li>
-                    <li class="footer-ul-li"><a href="#" class="footer-text header-link">Politique de Confidentialite</a></li>
-                    <li class="footer-ul-li"><a href="#" class="footer-text header-link">Plan du Site</a></li>
-                </ul>
-            </div>           
-        </div>
-    
-        <div class="footer-responsive">
-            <div class="footer-responsive-content-box">
-    
-                <div class="footer-icons-message-container">
-                    <a href="contact.html" class="footer-icons-link">
-                        <ion-icon name="mail-unread-outline"></ion-icon>
-                        <span class="footer-icons-link-title">Message</span>
-                    </a>
-                </div>
-                
-                <div class="footer-icons-contact-container">
-                    <a href="tel:0123456789"  class="footer-icons-link" >
-                        <ion-icon name="phone-portrait-outline"></ion-icon>
-                        <span class="footer-icons-link-title">01 23 45 67 89</span>
-                    </a>
-                </div>
-    
-                
-                
-                <div class="footer-icons-acces-container">
-                    <a href="https://goo.gl/maps/rBmLMs35P9hm1gXr5"  class="footer-icons-link">
-                        <ion-icon name="trail-sign-outline"></ion-icon>
-                        <span class="footer-icons-link-title">Acces</span>
-                    </a>
-                </div>
-                
-            </div>
-        </div>
-    </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script type = "text/javascript" src="./public/js/script.js"></script>
