@@ -2,7 +2,7 @@ const menu = document.querySelector(".nav-responsive-container");
 const ham = document.querySelector(".menu-burger");
 const xIcon = document.querySelector(".xIcon");
 const menuIcon = document.querySelector(".open");
-const links = document.querySelectorAll('.nav__link')
+const links = document.querySelectorAll('.nav-link')
 
 ham.addEventListener("click", toggleMenu)
 
@@ -19,11 +19,8 @@ function toggleMenu() {
 }
 
 links.forEach(link => {
-    console.log(link.href, window.location.href);
-    console.log('estoy aqui');
     if(link.href === window.location.href){
         console.log("estoy en la pagina")
       link.setAttribute('aria-current', 'page')
-      console.log(link)
     }
-  })
+})
