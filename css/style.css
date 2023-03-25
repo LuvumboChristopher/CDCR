@@ -285,7 +285,7 @@ a {
 .img{
     width: 100%;
     margin: auto;
-    height: 240px;
+    height: 220px;
     object-fit: cover;
     overflow: hidden;
 }
@@ -293,10 +293,17 @@ a {
 .nous-sommes-text-container h2{
     width: 85%;
     margin: 1rem auto;
-    font-size: 30px;
+    font-size: 35px;
     font-family: 'GavencyRegular', sans-serif;
     font-weight: 200;
+    color: transparent;
+    -webkit-text-stroke: thin white;
     filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.5));
+}
+
+#middle{
+    color: white;
+    -webkit-text-stroke: 0;
 }
 
 .nous-sommes-text-container p{
@@ -357,7 +364,7 @@ a {
 
 .traitements-element {
     width: 95%;
-    margin: auto;
+    margin: 1.5rem auto;
     display: flex;
     gap: 1rem;
 }
