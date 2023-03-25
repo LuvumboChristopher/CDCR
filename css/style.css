@@ -33,8 +33,7 @@ a {
 .main {
     width: 100%;
     max-width: 1440px;
-    height: 85vh;
-    margin: auto;
+    height: calc(82vh - 50px);
     display: grid;
     place-items: center;
 }
@@ -42,7 +41,7 @@ a {
 .scroll {
     width: 95%;
     margin: auto;
-    height: 85vh;
+    height: calc(80vh - 50px);
     overflow-x: hidden;
     overflow-y: scroll;
     display: grid;
@@ -78,8 +77,8 @@ a {
 .header {
     width: 95%;
     max-width: 1440px;
+    padding: 1.5rem;
     margin: auto;
-    height: 10vh;
     display: grid;
     place-items: center;
 }
@@ -117,7 +116,7 @@ a {
 }
 
 .LogoFont{
-    font-size: clamp(50px, 5vw, 65px);
+    font-size: clamp(40px, 5vw, 55px);
     font-family: 'Saonara';
     font-weight: 500;
     filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.5));
@@ -504,6 +503,9 @@ a {
         border-bottom: 1px solid white;
         resize: none;
         text-align: justify;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
     }
     
     textarea:focus {
@@ -601,7 +603,7 @@ a {
 footer {
     width: 95%; 
     max-width: 768px;
-    height: 5vh;
+    padding: 1.5rem;
     display: grid;
     place-items: center;
     margin: auto;
@@ -615,12 +617,9 @@ footer {
 
 /*------------------------------------------------------*/
 
-@media screen and (max-height: 720px) {
-    .header,.main,.scroll, footer{
+@media screen and (max-height: 566px) {
+    .main,.scroll{
         height: auto;
-    } 
-    .scroll{
-        margin: 1rem auto;
     } 
 }
 
