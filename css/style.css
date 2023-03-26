@@ -32,8 +32,9 @@ a {
 
 .main {
     width: 100%;
-    max-width: 1440px;
-    height: calc(82vh - 50px);
+    max-width: 1232px;
+    margin: auto;
+    height: 75vh;
     display: grid;
     place-items: center;
 }
@@ -41,7 +42,7 @@ a {
 .scroll {
     width: 95%;
     margin: auto;
-    height: calc(80vh - 50px);
+    height: 72vh;
     overflow-x: hidden;
     overflow-y: scroll;
     display: grid;
@@ -77,6 +78,7 @@ a {
 .header {
     width: 95%;
     max-width: 1440px;
+    height: 15vh;
     padding: 1.5rem;
     margin: auto;
     display: grid;
@@ -284,7 +286,7 @@ a {
 .img{
     width: 100%;
     margin: auto;
-    height: 220px;
+    height: 210px;
     object-fit: cover;
     overflow: hidden;
 }
@@ -603,6 +605,7 @@ a {
 footer {
     width: 95%; 
     max-width: 768px;
+    height: 10vh;
     padding: 1.5rem;
     display: grid;
     place-items: center;
@@ -618,7 +621,7 @@ footer {
 /*------------------------------------------------------*/
 
 @media screen and (max-height: 566px) {
-    .main,.scroll{
+    .header,.main,.scroll{
         height: auto;
     } 
 }
