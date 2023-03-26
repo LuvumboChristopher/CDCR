@@ -118,7 +118,7 @@ a {
 }
 
 .LogoFont{
-    font-size: clamp(50px, 5vw, 70px);
+    font-size: clamp(45px, 5vw, 67px);
     font-family: 'Saonara';
     font-weight: 500;
     filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.5));
@@ -146,7 +146,8 @@ a {
 
         .header {
             width: 95%;
-            height: 10vh;
+            height: auto;
+            padding: 1.5rem 0;
             margin: auto;
             max-width: 868px;
             border-bottom: 1px solid white;
@@ -329,6 +330,16 @@ a {
             margin: auto;
             flex-direction: row;
         }
+
+        .nous-sommes-text-container h2{
+            width: 100%;
+            margin: 1.5rem auto;
+            font-size: 20px;
+            color: white;
+            -webkit-text-stroke: 0;
+            text-align: center;
+        }
+
         .nous-sommes-article:nth-last-of-type(2) {
             flex-direction:row-reverse;
             text-align: left;
@@ -341,7 +352,7 @@ a {
             height: 400px;
         } 
         .nous-sommes-article {
-            margin: 2.5rem auto;
+            margin: 1rem auto 2rem;
             flex-direction: column;
         }
         .nous-sommes-article:nth-last-of-type(2) {
@@ -630,11 +641,7 @@ footer {
 
 /*------------------------------------------------------*/
 
-@media screen and (max-height: 466px) {
-    .header,.main,.scroll,footer{
-        height: auto;
-    } 
-}
+
 
 @media screen and (max-width: 1024px){
     .scroll::-webkit-scrollbar {
@@ -642,10 +649,10 @@ footer {
     }
     .main {
         width: 100%;
-        height: 85vh;
+        height: 83vh;
     }   
     .scroll {
-        height: 82vh;
+        height: 81vh;
     } 
     .faq-content-box, .traitements-element{
         width: 100%;
@@ -656,3 +663,8 @@ footer {
 
 }
 
+@media screen and (max-height: 667px) {
+    .main,.scroll,footer{
+        height: auto;
+    } 
+}
