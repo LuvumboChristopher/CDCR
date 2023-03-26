@@ -79,7 +79,7 @@ a {
     width: 95%;
     max-width: 1440px;
     height: 15vh;
-    padding: 1.5rem 0;
+    padding: 0.5rem 0;
     margin: auto;
     display: grid;
     place-items: center;
@@ -118,7 +118,7 @@ a {
 }
 
 .LogoFont{
-    font-size: clamp(40px, 5vw, 55px);
+    font-size: clamp(50px, 5vw, 70px);
     font-family: 'Saonara';
     font-weight: 500;
     filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.5));
@@ -146,8 +146,9 @@ a {
 
         .header {
             width: 95%;
+            height: 10vh;
             margin: auto;
-            max-width: 768px;
+            max-width: 868px;
             border-bottom: 1px solid white;
         }
 
@@ -159,7 +160,7 @@ a {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 15px;
+            gap: 10px;
         }
 
         .open, .close {
@@ -286,17 +287,17 @@ a {
 .img{
     width: 100%;
     margin: auto;
-    height: 210px;
+    height: 200px;
     object-fit: cover;
     overflow: hidden;
 }
 
 .nous-sommes-text-container h2{
     width: 85%;
-    margin: 1rem auto;
-    font-size: 35px;
+    margin: 1.5rem auto;
+    font-size: 30px;
     font-family: 'GavencyRegular', sans-serif;
-    font-weight: 200;
+    font-weight: 100;
     color: transparent;
     -webkit-text-stroke: thin white;
     filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.5));
@@ -316,12 +317,12 @@ a {
 
     @media screen and (max-width: 1024px) {
         .nous-sommes-container{
-            max-width: 768px;
+            max-width: 868px;
         } 
-    
+
         .img {
             width: 100%;
-            height: 400px;
+            height: 390px;
         } 
 
         .nous-sommes-article {
@@ -334,7 +335,7 @@ a {
         }
     }
 
-    @media screen and (max-width: 536px) { 
+    @media screen and (max-width: 636px) { 
         .img {
             width: 100%;
             height: 400px;
@@ -396,7 +397,7 @@ a {
 
     @media screen and (max-width: 1024px) {
         .traitements-element {
-            max-width: 768px;
+            max-width: 868px;
             flex-direction: column;
             margin: 1rem auto;
         }
@@ -444,7 +445,7 @@ a {
 
         .faq-article{
             width: 100%;
-            max-width: 768px;
+            max-width: 868px;
         }
     }
 
@@ -586,7 +587,7 @@ a {
     @media screen and (max-width: 1024px) { 
         .contact-container {
             width: 100%;
-            max-width: 768px;
+            max-width: 868px;
         }
 
         .form-block {
@@ -606,7 +607,7 @@ footer {
     width: 95%; 
     max-width: 768px;
     height: 10vh;
-    padding: 1.5rem;
+    padding: 0.5rem;
     display: grid;
     place-items: center;
     margin: auto;
@@ -617,6 +618,15 @@ footer {
     font-size: 12px;
     filter: drop-shadow(0 0 0.45rem rgba(0, 0, 0, 0.24));
 }
+
+    /*  Responsive-----------------------------------------------------*/
+
+     @media screen and (max-width: 1024px) {
+        footer {
+            width: 95%;
+            height: 5vh;
+        }
+    }
 
 /*------------------------------------------------------*/
 
@@ -632,7 +642,11 @@ footer {
     }
     .main {
         width: 100%;
+        height: 85vh;
     }   
+    .scroll {
+        height: 82vh;
+    } 
     .faq-content-box, .traitements-element{
         width: 100%;
     }
