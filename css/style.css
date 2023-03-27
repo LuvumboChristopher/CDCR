@@ -45,6 +45,8 @@ a {
     height: 78vh;
     overflow-x: hidden;
     overflow-y: auto;
+    display: grid;
+    place-items: center;
 }
 
 .scroll::-webkit-scrollbar, ::-webkit-scrollbar {
@@ -68,6 +70,7 @@ a {
 
 }
 
+    /*  Responsive-----------------------------------------------------*/
 
     @media screen and (max-width: 1024px) {
         .scroll{
@@ -125,7 +128,7 @@ a {
 }
 
 .LogoFont{
-    font-size: clamp(45px, 5vw, 67px);
+    font-size: clamp(43px, 5vw, 65px);
     font-family: 'Saonara';
     font-weight: 500;
     filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.5));
@@ -289,7 +292,7 @@ a {
 .img{
     width: 100%;
     margin: auto;
-    height: 235px;
+    height: 210px;
     object-fit: cover;
     overflow: hidden;
 }
@@ -580,7 +583,7 @@ a {
     
     .map {
         width: 100%;
-        height: 400px;
+        height: 310px;
         margin: auto;
         border: none;
     }
@@ -602,7 +605,7 @@ a {
         } 
 
         .map {
-            height: 175px;
+            height: 165px;
         }
     }
     
