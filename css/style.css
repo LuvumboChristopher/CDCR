@@ -344,17 +344,16 @@ a {
             text-align: left;
         }
 
-    }
-
-    @media screen and (max-width: 636px) { 
-        .img {
-            width: 100%;
-            height: 200px;
-            border: none;
-        } 
         .nous-sommes-text-container p{
             width: 100%;
         }
+
+         .img {
+            width: 100%;
+            height: 425px;
+            border: none;
+        } 
+
     }
 
 /*Css Traitements-----------------------------------------------------*/
@@ -590,6 +589,7 @@ a {
     
     /*  Responsive-----------------------------------------------------*/
 
+   
     @media screen and (max-width: 1024px) { 
         .contact-container {
             max-width: 868px;
@@ -603,11 +603,20 @@ a {
             width: 100%;
             margin: 1rem auto;
         } 
+    }
 
+     @media screen and (min-width: 425px) and  (max-width: 768px) { 
         .map {
-            height: 165px;
+            height: 400px;
         }
     }
+
+    @media screen and (max-width: 425px) { 
+        .map {
+            height: 130px;
+        }
+    }
+
     
 
 /*  CSS Footer -----------------------------------------------------*/
