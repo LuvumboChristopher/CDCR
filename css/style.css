@@ -44,15 +44,12 @@ a {
     margin: auto;
     height: 79vh;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
     display: grid;
     place-items: center;
 }
 
 .scroll::-webkit-scrollbar, ::-webkit-scrollbar {
-    display: none;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  
     width: 0.7rem;
     margin: auto 1rem;
     filter: drop-shadow(0 0 0.45rem rgba(0, 0, 0, 0.24));
@@ -252,7 +249,7 @@ a {
 /*Css Nous Sommes-----------------------------------------------------*/
 
 .nous-sommes-container{
-    width: 100%;
+    width: 90%;
     margin: auto;
 }
 
@@ -350,7 +347,7 @@ a {
 /*Css Traitements-----------------------------------------------------*/
 
 .traitements-container{
-    width: 100%;
+    width: 90%;
     margin: 1rem auto;
     display: flex;
     flex-direction: column;
@@ -403,7 +400,7 @@ a {
 /*Css FAQ-----------------------------------------------------*/
 
 .faq-article-container {
-    width: 100%;
+    width: 90%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 100%));
@@ -445,7 +442,7 @@ a {
 /*Css Contact-----------------------------------------------------*/
 
     .contact-container {
-        width: 95%;
+        width: 90%;
         margin: auto;
     }
     
@@ -578,7 +575,6 @@ a {
 
     @media screen and (max-width: 1024px) { 
         .contact-container {
-            width: 100%;
             max-width: 868px;
         }
 
@@ -641,4 +637,4 @@ footer {
     .header{
         padding: 1.5rem 0;
     }     
-} ; 
+}
