@@ -34,7 +34,7 @@ a {
     width: 100%;
     max-width: 1232px;
     margin: auto;
-    height: 85vh;
+    height: 83vh;
     display: grid;
     place-items: center;
 }
@@ -42,7 +42,7 @@ a {
 .scroll {
     width: 95%;
     margin: auto;
-    height: 79vh;
+    height: 78vh;
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -68,10 +68,22 @@ a {
 
 }
 
+
+    @media screen and (max-width: 1024px) {
+        .scroll{
+            width: 100%;
+            -ms-overflow-style: none;
+            scrollbar-width: none; 
+        }    
+        .scroll::-webkit-scrollbar, ::-webkit-scrollbar {
+            display: none;
+        }
+    } 
+
 /* Header ----------------------------------------------------- */
 
 .header {
-    width: 85%;
+    width: 95%;
     height: 10vh;
     max-width: 1440px;
     padding: 0.5rem 0;
@@ -247,7 +259,7 @@ a {
 /*Css Nous Sommes-----------------------------------------------------*/
 
 .nous-sommes-container{
-    width: 90%;
+    width: 95%;
     margin: auto;
 }
 
@@ -345,7 +357,7 @@ a {
 /*Css Traitements-----------------------------------------------------*/
 
 .traitements-container{
-    width: 90%;
+    width: 95%;
     margin: 1rem auto;
     display: flex;
     flex-direction: column;
@@ -398,7 +410,7 @@ a {
 /*Css FAQ-----------------------------------------------------*/
 
 .faq-article-container {
-    width: 90%;
+    width: 95%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 100%));
@@ -440,7 +452,7 @@ a {
 /*Css Contact-----------------------------------------------------*/
 
     .contact-container {
-        width: 90%;
+        width: 95%;
         margin: 1rem auto;
     }
     
@@ -613,7 +625,7 @@ footer {
 
 /*  Responsive-----------------------------------------------------*/
 
-@media screen and (max-height: 667px) {
+@media screen and (max-height: 690px) {
     .header,.main,.scroll{
         height: auto;
     }    
