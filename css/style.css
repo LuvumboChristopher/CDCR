@@ -76,7 +76,7 @@ a {
     @media screen and (max-width: 1024px) {
         .scroll{
             width: 100%;
-            height: 84vh;
+            height: 85vh;
             -ms-overflow-style: none;
             scrollbar-width: none; 
         }    
@@ -157,6 +157,7 @@ a {
 
         .header {
             max-width: 868px;
+            border-bottom: 1px solid white;
         }
 
         .nav-content-container {
@@ -669,7 +670,8 @@ footer {
     } 
 
     .header{
-        margin: 1rem auto;
+        margin: 1rem auto 0;
+        border: none;
     }     
 
     footer{
