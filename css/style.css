@@ -6,6 +6,7 @@
     font-size: 14px;
     font-family: 'Montserrat', 'Segoe UI','Uber move', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
+    transition: all 0s ease-out;
 }
 
 a {
@@ -26,15 +27,15 @@ a {
 .container {
     width: 100%;
     margin: auto;
-    max-width: 1440px;
+    max-width: 1660px;
     display: block;
 }
 
 .main {
     width: 100%;
-    max-width: 1232px;
+    max-width: 1660px;
     margin: auto;
-    height: 83vh;
+    height: 85vh;
     display: grid;
     place-items: center;
 }
@@ -42,7 +43,7 @@ a {
 .scroll {
     width: 95%;
     margin: auto;
-    height: 78vh;
+    height: 83vh;
     overflow-x: hidden;
     overflow-y: auto;
     display: grid;
@@ -75,6 +76,7 @@ a {
     @media screen and (max-width: 1024px) {
         .scroll{
             width: 100%;
+            height: 84vh;
             -ms-overflow-style: none;
             scrollbar-width: none; 
         }    
@@ -88,8 +90,7 @@ a {
 .header {
     width: 95%;
     height: 10vh;
-    max-width: 1440px;
-    padding: 0.5rem 0;
+    max-width: 1660px;
     margin: auto;
     display: grid;
     place-items: center;
@@ -116,7 +117,7 @@ a {
 }
 
 .nav-content-ul-li a{
-    font-size: 10px;
+    font-size: 8px;
     letter-spacing: 2px;
     font-weight: 400;
     text-transform: uppercase;
@@ -128,14 +129,14 @@ a {
 }
 
 .LogoFont{
-    font-size: clamp(43px, 5vw, 65px);
+    font-size: clamp(45px, 10vh, 56px);
     font-family: 'Saonara';
     font-weight: 500;
     filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.5));
 }
 
 .nav-link[aria-current="page"] {
-    text-decoration: underline #ffffff 1px;
+    text-decoration: underline #ffffff 0.5px;
     text-underline-offset: 0.5rem;
 }
 
@@ -145,7 +146,7 @@ a {
 
     /*  Responsive-----------------------------------------------------*/
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 768px) {
         .regular-nav, .xIcon {
             display: none;
         }
@@ -156,7 +157,6 @@ a {
 
         .header {
             max-width: 868px;
-            border-bottom: 1px solid white;
         }
 
         .nav-content-container {
@@ -188,6 +188,7 @@ a {
             place-items: center;
             cursor: pointer;
             border: 1px solid white;
+            filter: box-shadow(5px 5px 2px rgba(0, 0, 0, 0.5));
         }
 
         .menu-burger {
@@ -198,6 +199,7 @@ a {
             position: relative;
             z-index: 99; 
             cursor: pointer;
+            filter: box-shadow(5px 5px 2px rgba(0, 0, 0, 0.5));
         }
 
         .rdv-link a {
@@ -292,15 +294,16 @@ a {
 .img{
     width: 100%;
     margin: auto;
-    height: 210px;
+    height: 230px;
     object-fit: cover;
     overflow: hidden;
+    filter: drop-shadow(5px 2px 2px rgba(0, 0, 0, 0.3));
 }
 
 .nous-sommes-text-container h2{
     width: 85%;
     margin: 1.5rem auto;
-    font-size: 30px;
+    font-size: 37px;
     font-family: 'GavencyRegular', sans-serif;
     font-weight: 100;
     color: transparent;
@@ -317,6 +320,8 @@ a {
     width: 85%;
     margin: auto;
     text-align: justify;
+    filter: drop-shadow(5px 2px 2px rgba(0, 0, 0, 0.3));
+
 }
     /*  Responsive-----------------------------------------------------*/
 
@@ -338,10 +343,10 @@ a {
         .nous-sommes-text-container h2{
             width: 100%;
             margin: 1.5rem auto;
-            font-size: 24px;
+            font-size: 30px;
+            text-align: left;
             color: white;
             -webkit-text-stroke: 0;
-            text-align: left;
         }
 
         .nous-sommes-text-container p{
@@ -350,7 +355,21 @@ a {
 
          .img {
             width: 100%;
-            height: 425px;
+            height: 240px;
+            border-bottom: 5px solid white;
+        } 
+
+    }
+
+    @media screen and (max-width: 768px) {
+        .nous-sommes-text-container h2{
+            width: 100%;
+            margin: 1.5rem auto;
+            font-size: 24px;
+        }
+        .img {
+            width: 100%;
+            height: 525px;
             border: none;
         } 
 
@@ -392,7 +411,8 @@ a {
     margin: auto;
     font-size: 1rem;
     text-align: justify;
-    filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.24));
+    filter: drop-shadow(5px 2px 2px rgba(0, 0, 0, 0.3));
+
 }
 
     /*  Responsive-----------------------------------------------------*/
@@ -436,6 +456,8 @@ a {
 
 .faq-article-text{
     text-align: justify;
+    filter: drop-shadow(5px 2px 2px rgba(0, 0, 0, 0.3));
+
 }
 
     /*  Responsive-----------------------------------------------------*/
@@ -496,6 +518,7 @@ a {
         -webkit-border-radius: 0;
         -moz-border-radius: 0;
         border-radius: 0;
+        filter: drop-shadow(5px 2px 2px rgba(0, 0, 0, 0.3));
     }
     
     .form-input:focus {
@@ -515,6 +538,7 @@ a {
         -webkit-border-radius: 0;
         -moz-border-radius: 0;
         border-radius: 0;
+        filter: drop-shadow(5px 2px 2px rgba(0, 0, 0, 0.3));
     }
     
     textarea:focus {
@@ -571,7 +595,7 @@ a {
         -webkit-border-radius: 0;
         -moz-border-radius: 0;
         transition: all .5s;
-        
+        filter: drop-shadow(5px 2px 2px rgba(0, 0, 0, 0.3));   
     }
     
     .form-button:hover {
@@ -582,9 +606,10 @@ a {
     
     .map {
         width: 100%;
-        height: 310px;
+        height: 390px;
         margin: auto;
         border: none;
+        filter: drop-shadow(5px 2px 2px rgba(0, 0, 0, 0.3));
     }
     
     /*  Responsive-----------------------------------------------------*/
@@ -605,7 +630,7 @@ a {
         } 
     }
 
-     @media screen and (min-width: 425px) and  (max-width: 768px) { 
+    @media screen and (min-width: 425px) and (max-width: 768px) { 
         .map {
             height: 400px;
         }
@@ -623,7 +648,8 @@ a {
 
 footer {
     width: 95%; 
-    max-width: 768px;
+    height: 5vh;
+    max-width: 1660px;
     display: grid;
     place-items: center;
     margin: auto;
@@ -632,17 +658,22 @@ footer {
 
 .footer-text {
     font-size: 12px;
-    filter: drop-shadow(0 0 0.45rem rgba(0, 0, 0, 0.24));
+    filter: drop-shadow(5px 2px 2px rgba(0, 0, 0, 0.3));
 }
 
 /*  Responsive-----------------------------------------------------*/
 
 @media screen and (max-height: 690px) {
-    .header,.main,.scroll{
+    .header,.main,.scroll,footer{
         height: auto;
-    }    
-     
-    .header,footer{
-        padding: 1.5rem 0;
+    } 
+
+    .header{
+        margin: 1rem auto;
+    }     
+
+    footer{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
     }  
 } 
