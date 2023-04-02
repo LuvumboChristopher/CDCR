@@ -27,7 +27,7 @@ a {
 .container {
     width: 100%;
     margin: auto;
-    max-width: 1660px;
+    max-width: 1440px;
     display: block;
 }
 
@@ -43,7 +43,7 @@ a {
 .scroll {
     width: 95%;
     margin: auto;
-    height: 83vh;
+    height: 85vh;
     overflow-x: hidden;
     overflow-y: auto;
     display: grid;
@@ -74,6 +74,9 @@ a {
     /*  Responsive-----------------------------------------------------*/
 
     @media screen and (max-width: 1024px) {
+        .main {
+            height: 85vh;
+        }
         .scroll{
             width: 100%;
             height: 85vh;
@@ -295,7 +298,7 @@ a {
 .img{
     width: 100%;
     margin: auto;
-    height: 230px;
+    height: 220px;
     object-fit: cover;
     overflow: hidden;
     filter: drop-shadow(5px 2px 2px rgba(0, 0, 0, 0.3));
@@ -343,9 +346,9 @@ a {
 
         .nous-sommes-text-container h2{
             width: 100%;
-            margin: 1.5rem auto;
-            font-size: 30px;
-            text-align: left;
+            margin: 2rem auto;
+            font-size: 33px;
+            text-align: center;
             color: white;
             -webkit-text-stroke: 0;
         }
@@ -356,8 +359,7 @@ a {
 
          .img {
             width: 100%;
-            height: 240px;
-            border-bottom: 5px solid white;
+            height: 620px;
         } 
 
     }
@@ -367,11 +369,11 @@ a {
             width: 100%;
             margin: 1.5rem auto;
             font-size: 24px;
+            text-align: left;
         }
         .img {
             width: 100%;
-            height: 525px;
-            border: none;
+            height: 220px;
         } 
 
     }
@@ -380,25 +382,25 @@ a {
 
 .traitements-container{
     width: 95%;
-    margin: 1rem auto;
+    margin:auto;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
 }
 
 .traitements-element {
     width: 100%;
-    margin: 1rem auto;
+    margin: 0 auto;
+    padding: 0  0 3rem;
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
 }
 
-.traitements-element:nth-last-of-type(1) {
-    margin: auto;
+.traitements-element:nth-last-child(1) {
+    padding: 0;
 }
 
 .traitements-element-title {
-    width: 35%;
+    width: 25%;
     margin: 0;
     font-size: 20px;
     font-family: 'GavencyRegular', sans-serif;
@@ -408,12 +410,11 @@ a {
 }
 
 .traitements-element-texte {
-    width: 100%;
+    width: 80%;
     margin: auto;
     font-size: 1rem;
     text-align: justify;
     filter: drop-shadow(5px 2px 2px rgba(0, 0, 0, 0.3));
-
 }
 
     /*  Responsive-----------------------------------------------------*/
@@ -422,13 +423,20 @@ a {
         .traitements-element {
             max-width: 868px;
             flex-direction: column;
-            margin: 1rem auto;
+            margin: 1.4rem auto;
+            padding: 0;
         }
         .traitements-element-title {
             width: 100%;
             margin: 0;
         }
+        .traitements-element-texte {
+            width: 100%;
+            border: none;
+            padding: 0;
+        }
     }
+
 
 /*Css FAQ-----------------------------------------------------*/
 
@@ -442,12 +450,11 @@ a {
 .faq-article{
     width: 90%;
     margin: 1.2rem auto;
-    
 }
 
 .faq-article-title {
-    width: 100%;
-    margin: 0;
+    width: 85%;
+    margin: auto;
     padding: 8px 0;
     font-size: 16px;
     font-family: 'GavencyRegular', sans-serif;
@@ -457,6 +464,8 @@ a {
 }
 
 .faq-article-text{
+    width: 85%;
+    margin: auto;
     text-align: justify;
     filter: drop-shadow(5px 2px 2px rgba(0, 0, 0, 0.3));
 
@@ -464,7 +473,7 @@ a {
 
     /*  Responsive-----------------------------------------------------*/
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1280px) {
         .faq-article-container {
             grid-template-columns: auto;
         }
@@ -473,6 +482,25 @@ a {
             width: 100%;
             max-width: 868px;
         }
+        .faq-article-title {
+            width: 100%;
+            margin: auto;
+            padding: 10px 0;
+            font-size: 17px;
+            font-family: 'GavencyRegular', sans-serif;
+            font-weight: 100;
+            text-align: left;
+            filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.5));
+        }
+
+        .faq-article-text{
+            width: 100%;
+            margin: auto;
+            text-align: justify;
+            filter: drop-shadow(5px 2px 2px rgba(0, 0, 0, 0.3));
+
+        }
+
     }
 
 /*Css Contact-----------------------------------------------------*/
@@ -608,10 +636,11 @@ a {
     
     .map {
         width: 100%;
-        height: 390px;
+        height: 340px;
         margin: auto;
         border: none;
         filter: drop-shadow(5px 2px 2px rgba(0, 0, 0, 0.3));
+        filter: brightness(80%);
     }
     
     /*  Responsive-----------------------------------------------------*/
@@ -656,12 +685,19 @@ footer {
     place-items: center;
     margin: auto;
     text-align: center;
+
 }
 
 .footer-text {
     font-size: 12px;
     filter: drop-shadow(5px 2px 2px rgba(0, 0, 0, 0.3));
 }
+
+    @media screen and (max-width: 768px) { 
+        footer {
+            border-top: 1px solid white;
+        }
+    }
 
 /*  Responsive-----------------------------------------------------*/
 
