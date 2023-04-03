@@ -19,8 +19,7 @@ function toggleMenu() {
 }
 
 links.forEach(link => {
-    if(link.href === window.location.href){
-        console.log("estoy en la pagina")
+    if(link.href === window.location.href.concat('.html')){
       link.setAttribute('aria-current', 'page')
     }
 })
