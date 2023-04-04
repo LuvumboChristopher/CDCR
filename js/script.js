@@ -19,7 +19,11 @@ function toggleMenu() {
 }
 
 links.forEach(link => {
+<<<<<<< HEAD
     if(link.href === window.location.href){
+=======
+    if(link.href === window.location.href.concat('.html')){
+>>>>>>> bd4fcb739fa1189ea5e585843de09304a5763a93
       link.setAttribute('aria-current', 'page')
     }
 })

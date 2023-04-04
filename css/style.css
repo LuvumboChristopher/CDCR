@@ -35,7 +35,7 @@ a {
     width: 100%;
     max-width: 1440px;
     margin: auto;
-    height: 85vh;
+    height: 87vh;
     display: grid;
     place-items: center;
 }
@@ -91,6 +91,7 @@ a {
     width: 95%;
     max-width: 1440px;
     margin: auto;
+    padding: 0.5rem 0;
     display: grid;
     place-items: center;
 }
@@ -129,7 +130,7 @@ a {
 
 .LogoFont{
     width: 100%;
-    font-size: clamp(40px, 15vw, 60px);
+    font-size: 58px;
     font-family: 'Saonara';
     font-weight: 500;
     filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.5));
@@ -643,7 +644,6 @@ a {
 
 footer {
     width: 95%;
-    height: 7vh;
     max-width: 1440px;
     display: grid;
     place-items: center;
@@ -652,7 +652,7 @@ footer {
 }
 
 .footer-text {
-    margin: auto;
+    margin: 0.56rem auto;
     font-size: 11px;
     filter: drop-shadow(5px 2px 2px rgba(0, 0, 0, 0.3));
 }
