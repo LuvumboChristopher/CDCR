@@ -35,7 +35,7 @@ a {
     width: 100%;
     max-width: 1440px;
     margin: auto;
-    height: 87vh;
+    height: 84vh;
     display: grid;
     place-items: center;
 }
@@ -43,7 +43,7 @@ a {
 .scroll {
     width: 96%;
     margin: auto;
-    height: 85vh;
+    height: 82vh;
     overflow-x: hidden;
     overflow-y: auto;
     display: grid;
@@ -353,10 +353,6 @@ a {
             text-align: center;
             margin-left: 2%;
         }
-        .img {
-            width: 100%;
-            height: 130px;
-        }
     }
 
 /*Css Traitements-----------------------------------------------------*/
@@ -395,6 +391,7 @@ a {
     margin: auto;
     font-size: 1rem;
     text-align: justify;
+    font-weight: 100;
     filter: drop-shadow(5px 2px 2px rgba(0, 0, 0, 0.3));
 }
 
@@ -441,22 +438,21 @@ a {
 }
 
 .faq-article-title {
-    width: 85%;
+    width: 90%;
     margin: auto;
-    padding: 8px 0;
-    font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: 450;
     text-align: left;
     filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.5));
 }
 
 .faq-article-text{
-    width: 85%;
+    width: 90%;
     margin: auto;
     text-align: justify;
+    font-weight: 100;
     filter: drop-shadow(5px 2px 2px rgba(0, 0, 0, 0.3));
-
 }
 
     /*  Responsive-----------------------------------------------------*/
@@ -510,7 +506,7 @@ a {
     .form-label {
         width: 100%;
         margin: 0.5rem auto;
-        font-size: 0.7rem; 
+        font-size: 0.8rem; 
         display: inline-block;
     }
     
@@ -533,7 +529,7 @@ a {
     
     textarea {
         width: 100%;
-        height: 130px;
+        height: 135px;
         margin: auto;
         padding: 10px;
         background: rgba(177, 177, 177, 0.223);
@@ -578,7 +574,7 @@ a {
     
     .checkbox-label {
         text-align: left;
-        font-size: 0.65rem;
+        font-size: 0.75rem;
     }
     
     .checkbox-input {
@@ -612,7 +608,7 @@ a {
     
     .map {
         width: 100%;
-        height: 440px;
+        height: 400px;
         margin: auto;
         border: none;
         filter: drop-shadow(5px 2px 2px rgba(0, 0, 0, 0.3));
@@ -644,6 +640,7 @@ a {
 
 footer {
     width: 95%;
+    height: 7vh;
     max-width: 1440px;
     display: grid;
     place-items: center;
