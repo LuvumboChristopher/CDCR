@@ -20,7 +20,6 @@ function toggleMenu() {
 
 links.forEach(link => {
     if(link.href === window.location.href){
-        console.log("estoy en la pagina")
       link.setAttribute('aria-current', 'page')
     }
 })
