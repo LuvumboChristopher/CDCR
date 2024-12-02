@@ -16,6 +16,7 @@ a {
 
 p {
     color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
 }
 @font-face {
     font-family: 'GavencyRegular';
@@ -29,29 +30,27 @@ p {
 
 
 .container {
-    width: 100%;
+    width: 80%;
     margin: auto;
     max-width: 1440px;
 }
+
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90%;
+        margin: auto;
+        max-width: 1440px;
+    }
+    
+}   
 
 .main {
     width: 100%;
     max-width: 1440px;
-    margin: auto;
-    height: 82.5vh;
-    display: grid;
-    place-items: center;
+    height: auto;
 }
 
-.scroll {
-    width: 96%;
-    margin: auto;
-    height: 82vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    display: grid;
-    place-items: center;
-}
 
 .scroll::-webkit-scrollbar, ::-webkit-scrollbar {
     width: 0.7rem;
@@ -85,13 +84,12 @@ p {
         .scroll::-webkit-scrollbar, ::-webkit-scrollbar {
             display: none;
         }
-    } 
-       
+    }   
 
 /* Header ----------------------------------------------------- */
 
 .header {
-    width: 95%;
+    min-height: 130px;
     max-width: 1440px;
     margin: auto;
     padding: 0.5rem 0;
@@ -120,7 +118,7 @@ p {
 }
 
 .nav-content-ul-li a{
-    font-size: 8px;
+    font-size: 10px;
     letter-spacing: 2px;
     font-weight: 400;
     text-transform: uppercase;
@@ -133,7 +131,7 @@ p {
 
 .LogoFont{
     width: 100%;
-    font-size: 58px;
+    font-size: clamp(50px, 5vw, 65px);
     font-family: 'Saonara';
     font-weight: 500;
     filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.5));
@@ -269,24 +267,29 @@ p {
 /*Css Nous Sommes-----------------------------------------------------*/
 
 .nous-sommes-container{
-    width: 95%;
     margin: auto;
 }
 
 .nous-sommes-article {
-    width: 100%;
-    margin: auto;
+    margin:  0 auto 5rem;
     display: flex;
     flex-direction: row;
     justify-content: center; 
     align-items: center;
+    border-bottom: 1px solid white;
+
 }
+
+
+
 
 .nous-sommes-article:nth-last-of-type(2) {
     flex-direction: row-reverse;
     text-align: right;
-    border-bottom: 2px solid white;
-    border-top: 2px solid white;
+}
+
+.nous-sommes-article:nth-last-of-type(1) {
+    margin:  auto;   
 }
 
 .nous-sommes-text-container{
@@ -298,7 +301,7 @@ p {
 
 .nous-sommes-text-container h2 {
     width: 90%;
-    margin: 1.5rem auto;
+    margin: 2rem auto;
     font-size: 34px;
     font-family: 'GavencyRegular', sans-serif;
     font-weight: 100;
@@ -309,31 +312,33 @@ p {
 .nous-sommes-text-container p {
     width: 90%;
     margin: auto;
+    font-size: 0.9rem;
     text-align: justify;
     filter: drop-shadow(5px 2px 2px rgba(0, 0, 0, 0.3));
 }
 
 .img {
     width: 100%;
-    height: 217px;
+    height: 270px;
     object-fit: cover;
     overflow: hidden;
     filter: drop-shadow(5px 2px 2px rgba(0, 0, 0, 0.3));
 } 
 
     @media screen and (max-width: 1024px) {
-        .nous-sommes-container {
-            max-width: 768px;
-        }
 
         .nous-sommes-article {
-            margin: 1rem auto 2rem;
+            border: none;
+            margin: 3rem auto;
             flex-direction: column;
         }
     
         .nous-sommes-article:nth-last-of-type(2) {
             flex-direction: column;
             border: none;
+        }
+        .nous-sommes-article:nth-last-of-type(1) {
+            margin: 3rem auto;
         }
 
         .nous-sommes-text-container h2{
@@ -361,36 +366,30 @@ p {
 /*Css Traitements-----------------------------------------------------*/
 
 .traitements-container{
-    width: 95%;
-    margin:auto;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem 
 }
 
 .traitements-element {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0  0 3rem;
+    flex-direction: column;
     display: flex;
-    gap: 2rem;
-}
-
-.traitements-element:nth-last-child(1) {
-    padding: 0;
+    gap: 1rem;
+    border-bottom: 1px solid white;
+    padding: 2rem 0;
 }
 
 .traitements-element-title {
-    width: 25%;
-    margin: 0;
-    font-size: 20px;
+    font-size: 24px;
+    text-align: left;
     font-family: 'GavencyRegular', sans-serif;
     font-weight: 100;
-    text-align: left;
     filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.5));
 }
 
 .traitements-element-texte {
-    width: 80%;
     margin: auto;
     font-size: 1rem;
     text-align: justify;
@@ -401,11 +400,18 @@ p {
     /*  Responsive-----------------------------------------------------*/
 
     @media screen and (max-width: 1232px) {
+        .traitements-container{
+            width: 100%;
+            margin: 1rem auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem 
+        }
         .traitements-element {
             max-width: 768px;
             flex-direction: column;
             margin: 1.4rem auto;
-            padding: 0;
+            padding-bottom: 3rem;
         }
         .traitements-element-title {
             width: 100%;
@@ -416,6 +422,10 @@ p {
             border: none;
             padding: 0;
         }
+        .traitements-element:nth-last-of-type(1) {
+            border: none;
+        }
+        
     }
 
     @media screen and (min-width: 768px) and (max-width:1232px) {
@@ -429,31 +439,32 @@ p {
 /*Css FAQ-----------------------------------------------------*/
 
 .faq-article-container {
-    width: 95%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 100%));
+    gap: 3rem;
 }
 
 .faq-article{
-    width: 90%;
-    margin: 1.2rem auto;
+    margin: auto;
+    border-bottom: 1px solid white;
+    padding: 2rem 1rem;
 }
 
 .faq-article-title {
-    width: 90%;
-    margin: auto;
-    padding: 10px 0;
-    font-size: 15px;
-    font-weight: 450;
+    margin-bottom: 1.8rem;
+    min-height: 0px;
+    font-size: 18px;
     text-align: left;
+    font-family: 'GavencyRegular', sans-serif;
+    font-weight: 100;
     filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.5));
 }
 
 .faq-article-text{
-    width: 90%;
     margin: auto;
-    text-align: justify;
+    min-height: 80px;
+    text-align: left;
     font-weight: 100;
     filter: drop-shadow(5px 2px 2px rgba(0, 0, 0, 0.3));
 }
@@ -463,11 +474,13 @@ p {
     @media screen and (max-width: 1232px) {
         .faq-article-container {
             grid-template-columns: auto;
+            gap: 0.5rem;
         }
 
         .faq-article{
             width: 100%;
-            max-width: 768px;
+            margin: 3rem auto 0;
+            padding: 0 0 1rem;
         }
         .faq-article-title,.faq-article-text {
             width: 100%;
@@ -478,8 +491,7 @@ p {
 /*Css Contact-----------------------------------------------------*/
 
     .contact-container {
-        width: 95%;
-        margin: 1rem auto;
+        margin: auto;
     }
     
     .form-block-container{
@@ -508,15 +520,15 @@ p {
     
     .form-label {
         width: 100%;
-        margin: 0.5rem auto;
-        font-size: 0.8rem; 
+        margin: 1rem auto;
+        font-size: 0.9rem; 
         display: inline-block;
     }
     
     .form-input {
         width: 100%;
         margin:auto;
-        padding: 6px;
+        padding: 1rem;
         background: rgba(177, 177, 177, 0.223);
         border: none;
         border-bottom: 1px solid rgb(255, 255, 255);
@@ -532,7 +544,7 @@ p {
     
     textarea {
         width: 100%;
-        height: 135px;
+        height: 215px;
         margin: auto;
         padding: 10px;
         background: rgba(177, 177, 177, 0.223);
@@ -590,7 +602,7 @@ p {
     .form-button {
         width: 100%;
         margin: auto;
-        padding: 9px;
+        padding: 20px;
         color: rgb(0, 0, 0);
         text-align: center;
         font-weight: 700;
@@ -611,7 +623,7 @@ p {
     
     .map {
         width: 100%;
-        height: 350px;
+        height: 500px;
         margin: auto;
         border: none;
         filter: drop-shadow(5px 2px 2px rgba(0, 0, 0, 0.3));
@@ -641,17 +653,19 @@ p {
 /*  CSS Footer -----------------------------------------------------*/
 
 footer {
-    width: 95%;
-    height: 7vh;
-    max-width: 1440px;
-    display: grid;
-    place-items: center;
+    width: 90%;
     margin: auto;
-    text-align: center;
+    height: 15vh;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .footer-text {
-    margin: 0.56rem auto;
+    width: max-content;
     font-size: 11px;
     filter: drop-shadow(5px 2px 2px rgba(0, 0, 0, 0.3));
 }
@@ -659,7 +673,9 @@ footer {
 
     @media screen and (max-width: 768px) { 
         footer {
+            height: auto;
             border-top: 1px solid white;
+            flex-direction: column-reverse;
         }
     }
 
